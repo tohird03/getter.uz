@@ -10,18 +10,23 @@ const Navbar = () => {
                     <ul className='navbar__list'>
                         <li className='navbar__item'>
                             <a className='navbar__link' href="#">
+                                <span
+                                     class="navbar__menu-icon material-symbols-outlined">
+                                    apps
+                                </span>
                                 menu
                             </a>
                         </li>
                         <li className='navbar__item'>
-                            <a className='navbar__link' href="#">
+                            <NavLink to="/about" className='navbar__link' href="#">
                                 О нас
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='navbar__item'>
-                            <a className='navbar__link' href="#">
+                            <NavLink
+                                to="/product" className='navbar__link' href="#">
                                 Продукты
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='navbar__item'>
                             <NavLink

@@ -5,13 +5,14 @@
     }
     &__header-bgTop {
         position: absolute;
-        top: -765px;
-        width: 1530px;
-        height: 1530px;
+        // top: -865px;
+        width: 1730px;
+        height: 1730px;
         border-radius: 50%;
         background: #4A2893;
         filter: blur(157px);
         transform: rotate(-180deg);
+        transform: translate(-875px, -875px);
         z-index: -1;
         display: flex;
         align-items: center;

@@ -6,9 +6,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Outfit";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,7 +17,8 @@ code {
 }
 
 .container {
-  max-width: 100vw;
+  max-width: 2500px;
+  width: 100%;
   margin: 0 auto;
   padding: 0px 50px;
 }

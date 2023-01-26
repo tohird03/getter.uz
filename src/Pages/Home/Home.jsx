@@ -7,8 +7,8 @@ import Card from '../../Components/Card/Card';
 const Home = () => {
 
     // HERO BG ANIMATION
-    const [pageY, setPageY] = useState(765)
-    const [pageX, setPageX] = useState(765)
+    const [pageY, setPageY] = useState(0)
+    const [pageX, setPageX] = useState(0)
     const handMouse = (e) => {
         setPageY(e.pageY)
         setPageX(e.pageX)
@@ -18,8 +18,8 @@ const Home = () => {
         <header onMouseMove={e => handMouse(e)} className='hero__header'>
             <div style={
                 {
-                    top: `${pageY - 765}px`,
-                    left: `${pageX - 765}px`
+                    top: `${pageY}px`,
+                    left: `${pageX}px`
                 }
             }
             className='hero__header-bgTop'>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom';
 import SignNavbar from '../../Components/Navbar/SignNavbar';
 import "../Home/Home.scss"
 import "./Sign.scss"
@@ -7,8 +7,8 @@ import heroVector from "../../Assets/Images/Vector.png"
 
 const SignIn = () => {
     // HERO BG ANIMATION
-    const [pageY, setPageY] = useState(765)
-    const [pageX, setPageX] = useState(765)
+    const [pageY, setPageY] = useState(0)
+    const [pageX, setPageX] = useState(0)
     const handMouse = (e) => {
         console.log(e);
         setPageY(e.pageY)
@@ -18,8 +18,8 @@ const SignIn = () => {
         <div onMouseMove={e => handMouse(e)} className='hero__header sign-header'>
             <div style={
                 {
-                    top: `${pageY - 765}px`,
-                    left: `${pageX - 765}px`
+                    top: `${pageY}px`,
+                    left: `${pageX}px`
                 }
             }
                 className='hero__header-bgTop'>
