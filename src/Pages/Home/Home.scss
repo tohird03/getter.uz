@@ -1,0 +1,50 @@
+.hero {
+    &__header {
+        position: relative;
+        overflow: hidden;
+    }
+    &__header-bgTop {
+        position: absolute;
+        top: -765px;
+        width: 1530px;
+        height: 1530px;
+        border-radius: 50%;
+        background: #4A2893;
+        filter: blur(157px);
+        transform: rotate(-180deg);
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__header-bgCenter {
+        width: 1230px;
+        height: 1230px;
+        border-radius: 50%;
+        background-color: #8000FF;
+        // filter: blur(157px);
+        transform: rotate(-180deg);
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__header-bgBottom {
+        width: 930px;
+        height: 930px;
+        border-radius: 50%;
+        background: #151110;
+        // filter: blur(212px);
+        transform: rotate(-180deg);
+        z-index: -1;
+    }
+}
+.home__card {
+    padding-top: 40px;
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(335px, 1fr));
+        column-gap: 32px;
+        row-gap: 30px;
+    }
+}

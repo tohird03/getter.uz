@@ -1,0 +1,26 @@
+.card {
+    width: 335px;
+    &__img {
+        border-radius: 8px;
+        margin-bottom: 7px;
+    }
+    &__title {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 4px;
+    }
+    &__desc {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        color: #000000;
+        opacity: 0.4;
+        text-transform: uppercase;
+    }
+}

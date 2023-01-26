@@ -1,0 +1,98 @@
+.navbar {
+    padding: 25px 0px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 55px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin-right: 30px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        border: 1px solid #4E4559;
+        border-radius: 50px;
+        padding: 6px;
+    }
+    &__item {
+        margin-right: 10px;
+        height: 100%;
+    }
+    &__link {
+        display: inline-block;
+        border-radius: 50px;
+        padding: 6px 12px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__right-list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    &__right-item + &__right-item {
+        margin-left: 15px;
+    }
+    &__right-link {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        padding: 9px 50px;
+        text-decoration: none;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+}
+
+.light__header {
+    .navbar {
+        border-bottom: 1px solid rgba(204, 204, 204, 0.7);
+        &__logo, &__link, &__right-link {
+            color: #121212;
+        }
+        &__right-link {
+            border: 1px solid rgba(18, 18, 18, 0.2);
+        }
+    }
+}
+
+.sign-navbar {
+    padding: 25px 0 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    &__logo {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 55px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,30 @@
+.hero {
+    padding: 40px 0 400px;
+    &__heading {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 68px;
+        color: #FFFFFF;
+        max-width: 700px;
+        margin-bottom: 74px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 89px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__link-desc {
+        margin-right: 40px;
+    }
+    &__link-img {
+        margin-right: 40px;
+    }
+}
