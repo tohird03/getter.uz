@@ -1,10 +1,11 @@
 .article-card {
     display: flex;
     align-items: flex-end;
-    max-width: 60%;
+    min-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
     &__text {
         padding: 14px 0px 21px 14px;
-        max-width: 600px;
         border-bottom: 1px solid #CCCCCC;
         margin-right: 37px;
     }
@@ -27,7 +28,6 @@
         font-size: 24px;
         line-height: 30px;
         color: #000000;
-        max-width: 550px;
         margin-bottom: 34px;
     }
 

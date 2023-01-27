@@ -1,0 +1,40 @@
+.article {
+    padding: 40px 0;
+    &__container  {
+        display: flex;
+        align-items: flex-start;
+    }
+    &-sidebar {
+        padding: 50px 56px 125px;
+        background: #EEEEEE;
+        border-radius: 12px;
+        max-width: 20%;
+        width: 100%;
+        margin-right: 63px;
+        &__heading {
+            list-style:disc outside none;
+            display: list-item;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        &__list {
+            list-style: none;
+        }
+        &__button {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            opacity: 0.6;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+    }
+    &__cards {
+        max-width: 55%;
+        width: 100%;
+    }
+}
