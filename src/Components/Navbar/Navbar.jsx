@@ -35,9 +35,9 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='navbar__item'>
-                            <a className='navbar__link' href="#">
+                            <NavLink to="/article" className='navbar__link' href="#">
                                 Статья
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='navbar__item'>
                             <a className='navbar__link' href="#">
