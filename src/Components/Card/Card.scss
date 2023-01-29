@@ -1,8 +1,9 @@
 .card {
-    width: 335px;
+    width: 100%;
     &__img {
         border-radius: 8px;
         margin-bottom: 7px;
+        width: 100%;
     }
     &__title {
         font-family: 'Outfit';

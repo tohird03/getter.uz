@@ -10,6 +10,11 @@
         margin-bottom: 74px;
     }
     &__link {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        padding: 0 0 0 50px;
         display: flex;
         align-items: center;
         font-family: 'Outfit';
@@ -19,6 +24,22 @@
         line-height: 89px;
         color: #FFFFFF;
         text-decoration: none;
+
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%)
+        1;
+    }
+    &__link-vector {
+        transition: 1s;
+    }
+    &__link:hover &__link-vector {
+        margin-left: 100px;
+        transform: translate(30px);
+    }
+    &__link-container {
+        display: flex;
+        align-items: center;
     }
     &__link-desc {
         margin-right: 40px;
@@ -26,4 +47,64 @@
     &__link-img {
         margin-right: 40px;
     }
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.profile {
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    transition: 0.2s;
+    &__about {
+        position: absolute;
+        top: 90px;
+        width: 0;
+    }
+}
+
+.profile:hover {
+    transform: scale(1.2);
+    z-index: 1010;
+}
+
+.tooltip {
+    min-width: 200px;
+    position: relative;
+    visibility: hidden;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+
+    h3 {
+        width: 215px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23px;
+    }
+    p {
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 15px;
+        text-decoration-line: underline;
+    }
+}
+
+.profile:hover .tooltip {
+    visibility: visible;
+}
+
+.tooltip::after {
+
+    content: " ";
+    position: absolute;
+    left: 10%;
+    transform: translate(0, -270%);
+    margin-left: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent  ;
 }

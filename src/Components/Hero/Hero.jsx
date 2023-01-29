@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Hero.scss"
 
-import heroLinkImg from "../../Assets/Images/hero-link.svg"
 import heroVector from "../../Assets/Images/Vector.png"
+import HeroTooltip from './HeroTooltip';
 
 const Hero = () => {
+    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3,]
     return (
         <div className="hero">
             <div className="container">
@@ -13,13 +14,24 @@ const Hero = () => {
                 </h2>
 
                 <a className='hero__link' href="#">
-                    <p className='hero__link-desc'>
-                        Давайте обсудим и ваш проект
-                    </p>
+                    <div className="container hero__link-container">
+                        <p className='hero__link-desc'>
+                            Давайте обсудим и ваш проект
+                        </p>
 
-                    <img className='hero__link-img' src={heroLinkImg} alt="Hero link img" width="608" height="68"/>
+                        <div className='hero__profile'>
+                            {
+                                arr.map((e, i) => {
+                                    return <HeroTooltip key={i} style={i} />
+                                })
+                            }
+                        </div>
 
-                    <img src={heroVector} alt="Hero vector" width="59" height="45"/>
+                        <img
+                            className='hero__link-vector'
+                            style={{ marginLeft: `-${(arr.length - 1) * 16}px` }}
+                            src={heroVector} alt="Hero vector" width="59" height="45" />
+                    </div>
                 </a>
             </div>
         </div>
