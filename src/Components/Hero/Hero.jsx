@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero">
             <div className="container">
                 <h2 className='hero__heading'>
-                    Создаем сайты и айдентику от всей души
+                    Создаем сайты и айдентику от всей <span className='hero__heading-span'>души</span>
                 </h2>
 
                 <a className='hero__link' href="#">

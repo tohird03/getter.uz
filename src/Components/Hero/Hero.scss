@@ -1,3 +1,7 @@
+@font-face {
+    font-family: NewRomanItalic;
+    src: url("../../Assets/Fonts/TimesNewRomanItalic.ttf");
+}
 .hero {
     padding: 40px 0 400px;
     &__heading {
@@ -9,6 +13,9 @@
         color: #FFFFFF;
         max-width: 700px;
         margin-bottom: 74px;
+    }
+    &__heading-span {
+        font-family: NewRomanItalic;
     }
     &__heading::after {
         content: url("../../Assets/Images/after.svg");
