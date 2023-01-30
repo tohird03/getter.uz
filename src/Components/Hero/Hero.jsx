@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from "react-router-dom"
 import "./Hero.scss"
 
 import heroVector from "../../Assets/Images/Vector.png"
 import HeroTooltip from './HeroTooltip';
 
 const Hero = () => {
-    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3,]
+    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 4]
     return (
         <div className="hero">
             <div className="container">
@@ -13,26 +14,30 @@ const Hero = () => {
                     Создаем сайты и айдентику от всей <span className='hero__heading-span'>души</span>
                 </h2>
 
-                <a className='hero__link' href="#">
-                    <div className="container hero__link-container">
-                        <p className='hero__link-desc'>
-                            Давайте обсудим и ваш проект
-                        </p>
+                <div className='hero__about-link'>
 
-                        <div className='hero__profile'>
-                            {
-                                arr.map((e, i) => {
-                                    return <HeroTooltip key={i} style={i} />
-                                })
-                            }
+                    <NavLink
+                        to="/about"
+                        className='hero__link'>
+                        <div className="container hero__link-container">
+                            <p className='hero__link-desc'>
+                                Давайте обсудим и ваш проект
+                            </p>
+
+                            <img
+                                className='hero__link-vector'
+                                style={{ marginLeft: `${ 150 + ((arr.length - 1) * 45)}px` }}
+                                src={heroVector} alt="Hero vector" width="59" height="45" />
                         </div>
-
-                        <img
-                            className='hero__link-vector'
-                            style={{ marginLeft: `-${(arr.length - 1) * 16}px` }}
-                            src={heroVector} alt="Hero vector" width="59" height="45" />
+                    </NavLink>
+                    <div className='hero__profile'>
+                        {
+                            arr.map((e, i) => {
+                                return <HeroTooltip key={i} style={i} />
+                            })
+                        }
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     );

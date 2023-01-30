@@ -43,8 +43,15 @@
         border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%)
         1;
     }
+    &__about-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 450px;
+    }
     &__link-vector {
         transition: 1s;
+        margin-left: 450px;
     }
     &__link:hover &__link-vector {
         margin-left: 100px;
@@ -63,6 +70,7 @@
     &__profile {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 }
 
