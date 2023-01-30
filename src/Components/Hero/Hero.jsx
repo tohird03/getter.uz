@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "./Hero.scss"
 
 import heroVector from "../../Assets/Images/Vector.png"
 import HeroTooltip from './HeroTooltip';
+import LinkSite from '../Link/LinkSite';
 
 const Hero = () => {
     let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 4]
@@ -15,7 +16,6 @@ const Hero = () => {
                 </h2>
 
                 <div className='hero__about-link'>
-
                     <NavLink
                         to="/about"
                         className='hero__link'>
@@ -38,6 +38,8 @@ const Hero = () => {
                         }
                     </div>
                 </div>
+
+                <LinkSite/>
             </div>
         </div>
     );

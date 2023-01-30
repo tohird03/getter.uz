@@ -3,7 +3,7 @@
     src: url("../../Assets/Fonts/TimesNewRomanItalic.ttf");
 }
 .hero {
-    padding: 40px 0 400px;
+    padding: 40px 0 0;
     &__heading {
         position: relative;
         font-family: 'Outfit';
@@ -48,6 +48,7 @@
         align-items: center;
         justify-content: space-between;
         margin-left: 450px;
+        margin-bottom: 375px;
     }
     &__link-vector {
         transition: 1s;
