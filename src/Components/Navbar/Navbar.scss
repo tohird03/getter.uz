@@ -50,6 +50,9 @@
         color: #FFFFFF;
         text-decoration: none;
     }
+    .active {
+
+    }
     &__link-menu {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 84px;
@@ -87,6 +90,16 @@
         border-bottom: 1px solid rgba(204, 204, 204, 0.7);
         &__logo, &__link, &__right-link {
             color: #121212;
+        }
+        &__list {
+            border: 1px solid #CCCCCC;
+        }
+        &__link-menu {
+            background: rgba(204, 204, 204, 0.2);
+        }
+        .active {
+            background: rgba(204, 204, 204, 0.2);
+            border-radius: 50px;
         }
         &__right-link {
             border: 1px solid rgba(18, 18, 18, 0.2);
