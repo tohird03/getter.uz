@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Home.scss"
 import Navbar from '../../Components/Navbar/Navbar';
 
 import Hero from '../../Components/Hero/Hero';
 import Card from '../../Components/Card/Card';
+
 const Home = () => {
 
     // HERO BG ANIMATION
     const [pageY, setPageY] = useState(0)
     const [pageX, setPageX] = useState(0)
     const handMouse = (e) => {
-        setPageY(e.pageY)
-        setPageX(e.pageX)
+        setTimeout(() => {
+            setPageY(e.pageY)
+            setPageX(e.pageX)
+        }, 300);
     }
 
     return (<>

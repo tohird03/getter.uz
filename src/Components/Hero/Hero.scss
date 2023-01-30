@@ -1,6 +1,7 @@
 .hero {
     padding: 40px 0 400px;
     &__heading {
+        position: relative;
         font-family: 'Outfit';
         font-weight: 300;
         font-size: 64px;
@@ -8,6 +9,12 @@
         color: #FFFFFF;
         max-width: 700px;
         margin-bottom: 74px;
+    }
+    &__heading::after {
+        content: url("../../Assets/Images/after.svg");
+        position: absolute;
+        right: -20px;
+        bottom: -50px;
     }
     &__link {
         position: absolute;

@@ -6,12 +6,16 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className="container navbar__container">
                 <div className='navbar__menu'>
-                    <h1 className='navbar__logo'>Getter</h1>
+                    <NavLink
+                        to="/"
+                        className='navbar__logo'>
+                        Getter
+                    </NavLink>
                     <ul className='navbar__list'>
                         <li className='navbar__item'>
-                            <a className='navbar__link' href="#">
+                            <a className='navbar__link navbar__link-menu' href="#">
                                 <span
-                                     class="navbar__menu-icon material-symbols-outlined">
+                                    class="navbar__menu-icon material-symbols-outlined">
                                     apps
                                 </span>
                                 menu
