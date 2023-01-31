@@ -2,7 +2,9 @@
     --animation-time: 2s;
 }
 
-
+.d-none {
+    display: none;
+}
 .hero {
     &__header {
         position: relative;
@@ -64,5 +66,64 @@
             column-gap: 32px;
             row-gap: 30px;
         }
+    }
+}
+
+.sticky__link {
+    position: sticky;
+    top: 0;
+    margin-top: -100px;
+    transition: top 0.5s ease;
+}
+
+.sticky__link-bg {
+    background-color: #ffffff;
+    .link__hr {
+        background: rgba(86, 80, 80, 0.2);
+    }
+    .link__add {
+        color: rgba(86, 80, 80, 0.5);
+    }
+    .link__add-span {
+        color: rgba(86, 80, 80, 0.5);
+        background: rgba(86, 80, 80, 0.2);
+    }
+    .link__button-wrapper {
+        border-right: 1px solid rgba(86, 80, 80, 0.1);
+
+    }
+    .link__button-wrapper button {
+        color: rgba(86, 80, 80, 0.5);
+    }
+    .link__button-wrapper button.link__active {
+        color: #565050;
+    }
+}
+
+.scroll__top {
+    background-color: #ffffff;
+    top: 0;
+    // transition: top 0.5s ease;
+    z-index: 1001;
+    box-shadow: 0px 1px 10px #999;
+    .link__hr {
+        background: rgba(86, 80, 80, 0.2);
+    }
+    .link__add {
+        color: rgba(86, 80, 80, 0.5);
+    }
+    .link__add-span {
+        color: rgba(86, 80, 80, 0.5);
+        background: rgba(86, 80, 80, 0.2);
+    }
+    .link__button-wrapper {
+        border-right: 1px solid rgba(86, 80, 80, 0.1);
+
+    }
+    .link__button-wrapper button {
+        color: rgba(86, 80, 80, 0.5);
+    }
+    .link__button-wrapper button.link__active {
+        color: #565050;
     }
 }

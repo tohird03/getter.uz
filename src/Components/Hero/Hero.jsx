@@ -39,7 +39,6 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <LinkSite/>
             </div>
         </div>
     );

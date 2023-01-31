@@ -25,7 +25,7 @@ const About = () => {
                     <div className="container about-hero__container">
                         <h2 className='about-hero__heading'>
                             Создаем сайты и айдентику от всей
-                            
+
                             <span className='about-it__heading-span'>
                                 души
                             </span>
@@ -33,7 +33,7 @@ const About = () => {
                         <img src={heroImg} alt="" />
 
                         {/* <div className='about-hero__anim'>
-                            <div class="background">
+                            <div className="background">
                                 <span>
                                     <img src={anim1} alt="" />
                                 </span>

@@ -15,7 +15,7 @@ const Navbar = () => {
                         <li className='navbar__item'>
                             <a className='navbar__link navbar__link-menu' href="#">
                                 <span
-                                    class="navbar__menu-icon material-symbols-outlined">
+                                    className="navbar__menu-icon material-symbols-outlined">
                                     apps
                                 </span>
                                 menu

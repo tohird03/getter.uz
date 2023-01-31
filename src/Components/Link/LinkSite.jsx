@@ -13,7 +13,7 @@ const LinkSite = () => {
 
                     <div className='link__button-wrapper '>
                         <button className='link__active'>
-                        Наше портфолио
+                            Популярные сайты
                         </button>
                     </div>
                 </div>
