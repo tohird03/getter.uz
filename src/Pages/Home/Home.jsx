@@ -36,6 +36,7 @@ const Home = () => {
             setnavColor("sticky__link-bg")
         }else {
             setnavColor("")
+            document.querySelector(".sticky__link").classList.remove("scroll__top")
         }
 
     };
