@@ -31,12 +31,17 @@ const Home = () => {
     const listenScrollEvent = (e) => {
         let sticky = document.querySelector('.sticky__link')
         let rect = sticky.getBoundingClientRect();
-
-        if (rect.y == -100 || rect.y == 0 || (rect.y < 0 && rect.y > -100))  {
-            setnavColor("sticky__link-bg")
-        }else {
-            setnavColor("")
+        console.log(rect.y);
+        if (rect.y < 96 && rect.y > 0) {
             document.querySelector(".sticky__link").classList.remove("scroll__top")
+        }else if(rect.y == 0) {
+            document.querySelector(".sticky__link").classList.add("scroll__top")
+            document.querySelector(".sticky__link").classList.add("sticky__link-bg")
+
+        }else {
+            console.log("ha");
+            document.querySelector(".sticky__link").classList.remove("scroll__top")
+            document.querySelector(".sticky__link").classList.remove("sticky__link-bg")
         }
 
     };
@@ -51,14 +56,19 @@ const Home = () => {
 
     window.onscroll = () => {
         let currentScrollPos = window.pageYOffset
-        if(prevScrollPos > currentScrollPos) {
-            setnavColor("sticky__link-bg")
-            document.querySelector(".sticky__link").style.top = "0"
+        if (prevScrollPos > currentScrollPos) {
+            document.querySelector(".nav__sticky").classList.add("nav__fixed")
             document.querySelector(".sticky__link").classList.add("scroll__top")
-        }else {
-            setnavColor("sticky__link")
-            document.querySelector(".sticky__link").classList.remove("scroll__top")
-            document.querySelector(".sticky__link").style.top = "-105px"
+            document.querySelector(".sticky__link").style.top = "95px"
+            document.querySelector(".nav__sticky").style.top = "0"
+        } else {
+            document.querySelector(".nav__sticky").classList.remove("nav__fixed")
+
+            document.querySelector(".sticky__link").classList.add("scroll__top")
+
+            document.querySelector(".sticky__link").style.top = "0"
+            document.querySelector(".nav__sticky").style.top = "-95px"
+
         }
 
         prevScrollPos = currentScrollPos
@@ -79,7 +89,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Navbar />
+            <div className='nav__sticky'>
+                <Navbar />
+            </div>
             <Hero />
         </header>
         <div className={`sticky__link ${navColor}`}>

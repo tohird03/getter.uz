@@ -9,6 +9,7 @@ import SignUp from './Pages/Sign/SignUp';
 import Product from './Pages/Product/Product';
 import About from './Pages/About/About';
 import Article from './Pages/Article/Article';
+import Recomendation from './Pages/Reacomendation/Recomendation';
 
 function App() {
   return (<div className='App'>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/article' element={<Article/>}/>
+        <Route path='/reacomendation' element={<Recomendation/>}/>
       </Routes>
       <Footer/>
     </div>)
