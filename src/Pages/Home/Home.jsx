@@ -30,18 +30,24 @@ const Home = () => {
 
     const listenScrollEvent = (e) => {
         let sticky = document.querySelector('.sticky__link')
+        let nav = document.querySelector(".nav__sticky")
         let rect = sticky.getBoundingClientRect();
-        console.log(rect.y);
-        if (rect.y < 96 && rect.y > 0) {
-            document.querySelector(".sticky__link").classList.remove("scroll__top")
-        }else if(rect.y == 0) {
-            document.querySelector(".sticky__link").classList.add("scroll__top")
-            document.querySelector(".sticky__link").classList.add("sticky__link-bg")
+        let navRect = nav.getBoundingClientRect();
 
+        if(rect.y > 755) {
+            nav.classList.remove("nav__fixed")
+            nav.classList.remove("bg__fix")
+            nav.style.top = "0"
+        }
+
+        if (rect.y < 96 && rect.y > 0) {
+            sticky.classList.remove("scroll__top")
+        }else if(rect.y == 0) {
+            sticky.classList.add("scroll__top")
+            sticky.classList.add("sticky__link-bg")
         }else {
-            console.log("ha");
-            document.querySelector(".sticky__link").classList.remove("scroll__top")
-            document.querySelector(".sticky__link").classList.remove("sticky__link-bg")
+            sticky.classList.remove("scroll__top")
+            sticky.classList.remove("sticky__link-bg")
         }
 
     };
@@ -58,6 +64,7 @@ const Home = () => {
         let currentScrollPos = window.pageYOffset
         if (prevScrollPos > currentScrollPos) {
             document.querySelector(".nav__sticky").classList.add("nav__fixed")
+            document.querySelector(".nav__sticky").classList.add("bg__fix")
             document.querySelector(".sticky__link").classList.add("scroll__top")
             document.querySelector(".sticky__link").style.top = "95px"
             document.querySelector(".nav__sticky").style.top = "0"
