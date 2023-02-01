@@ -34,7 +34,7 @@ const Home = () => {
         let rect = sticky.getBoundingClientRect();
         let navRect = nav.getBoundingClientRect();
 
-        if(rect.y > 755) {
+        if(rect.y > 750) {
             nav.classList.remove("nav__fixed")
             nav.classList.remove("bg__fix")
             nav.style.top = "0"
