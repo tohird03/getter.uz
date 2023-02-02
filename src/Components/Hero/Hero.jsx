@@ -7,7 +7,7 @@ import HeroTooltip from './HeroTooltip';
 import LinkSite from '../Link/LinkSite';
 
 const Hero = () => {
-    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 4]
+    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2]
     return (
         <div className="hero">
             <div className="container">
@@ -19,6 +19,12 @@ const Hero = () => {
                     <NavLink
                         to="/about"
                         className='hero__link'>
+
+                        <span class="top"></span>
+                        <span class="right"></span>
+                        <span class="bottom"></span>
+                        <span class="left"></span>
+
                         <div className="container hero__link-container">
                             <p className='hero__link-desc'>
                                 Давайте обсудим и ваш проект
@@ -26,7 +32,7 @@ const Hero = () => {
 
                             <img
                                 className='hero__link-vector'
-                                style={{ marginLeft: `${ 150 + ((arr.length - 1) * 45)}px` }}
+                                style={{ marginLeft: `${170 + ((arr.length - 1) * 50)}px` }}
                                 src={heroVector} alt="Hero vector" width="59" height="45" />
                         </div>
                     </NavLink>

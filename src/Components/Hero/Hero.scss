@@ -40,10 +40,13 @@
         color: #FFFFFF;
         text-decoration: none;
 
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%)
-        1;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+
+        span {
+            position: absolute;
+            border-radius: 100vmax;
+          }
     }
     &__about-link {
         display: flex;
@@ -51,6 +54,7 @@
         justify-content: space-between;
         margin-left: 450px;
         margin-bottom: 375px;
+
     }
     &__link-vector {
         transition: 1s;
@@ -132,3 +136,110 @@
     border-style: solid;
     border-color: transparent transparent rgb(255, 255, 255) transparent  ;
 }
+
+
+
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(208, 194, 194, 0.5),
+      rgb(244, 244, 244)
+    );
+  }
+
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgb(217, 220, 216),
+      rgba(232, 235, 231, 0.5),
+      transparent 50%
+    );
+  }
+
+
+  .top {
+    animation: animateTop 10s ease-in-out infinite;
+  }
+
+  .bottom {
+    animation: animateBottom 10s ease-in-out infinite;
+  }
+
+  .right {
+    animation: animateRight 0.1s linear infinite;
+  }
+
+  .left {
+    animation: animateLeft 0.1s ease-in-out infinite;
+  }
+
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }

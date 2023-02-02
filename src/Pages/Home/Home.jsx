@@ -34,6 +34,14 @@ const Home = () => {
         let rect = sticky.getBoundingClientRect();
         let navRect = nav.getBoundingClientRect();
 
+        console.log(rect.y);
+
+        if(rect.y > 95) {
+            console.log(true);
+            nav.style.top = "-96px"
+            nav.classList.remove("nav__fixed")
+        }
+
         if(rect.y > 750) {
             nav.classList.remove("nav__fixed")
             nav.classList.remove("bg__fix")
@@ -67,14 +75,16 @@ const Home = () => {
             document.querySelector(".nav__sticky").classList.add("bg__fix")
             document.querySelector(".sticky__link").classList.add("scroll__top")
             document.querySelector(".sticky__link").style.top = "95px"
+            document.querySelector(".nav__sticky").classList.remove("nav__topDic")
             document.querySelector(".nav__sticky").style.top = "0"
         } else {
             document.querySelector(".nav__sticky").classList.remove("nav__fixed")
+            document.querySelector(".nav__sticky").style.top = "-96px"
 
             document.querySelector(".sticky__link").classList.add("scroll__top")
 
             document.querySelector(".sticky__link").style.top = "0"
-            document.querySelector(".nav__sticky").style.top = "-95px"
+            document.querySelector(".nav__sticky").classList.add("nav__topDic")
 
         }
 

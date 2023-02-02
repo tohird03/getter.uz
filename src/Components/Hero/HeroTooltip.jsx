@@ -5,7 +5,7 @@ const HeroTooltip = (props) => {
     return (
         <div
             className='profile'
-            style={{ left: -`${props.style * 20}` }}>
+            style={{ left: -`${props.style * 15}` }}>
             <img
                 className=''
                 src={heroLinkImg}
