@@ -99,18 +99,25 @@
             height: 18px;
         }
     }
+    &__like-wrapper {
+        opacity: 0.6;
+        transition: all 0.5s ease;
+    }
+    &__like-wrapper:hover {
+        opacity: 1;
+    }
     &__like-btn {
-        padding: 6px 7px;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.5s ease;
         border-radius: 50%;
+        margin-right: 10px;
         svg {
             margin-top: 2px;
             fill: currentColor;
             color: rgb(255, 255, 255);
-            opacity: 0.6;
+            // opacity: 0.6;
             transition: all 0.2s ease;
         }
     }
