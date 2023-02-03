@@ -72,7 +72,7 @@
             color: transparent;
             cursor: pointer;
             background-color: transparent;
-            margin-right: 10px;
+            // margin-right: 10px;
 
             svg {
                 fill: currentColor;
@@ -98,6 +98,22 @@
             width: 18px;
             height: 18px;
         }
+    }
+    &__like-btn {
+        padding: 6px 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        border-radius: 50%;
+        svg {
+            margin-top: 2px;
+
+        }
+    }
+
+    &__like-btn:hover {
+        background-color: rgba(255, 255, 255, 0.3);
     }
 }
 
