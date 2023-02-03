@@ -52,10 +52,10 @@ const Home = () => {
             sticky.classList.remove("scroll__top")
             sticky.classList.remove("sticky__link-bg")
 
-        }else if(rect.y == 0) {
+        } else if (rect.y == 0) {
             sticky.classList.add("scroll__top")
             sticky.classList.add("sticky__link-bg")
-        }else {
+        } else {
             sticky.classList.remove("scroll__top")
             sticky.classList.remove("sticky__link-bg")
         }
@@ -101,8 +101,14 @@ const Home = () => {
                     left: `${pageX}px`
                 }
             }
-                className='hero__header-bgTop'>
-                <div className='hero__header-bgCenter'>
+                className='hero__header-bg'>
+                <div>
+                    <div className='hero__header-bgTop'>
+
+                    </div>
+                    <div className='hero__header-bgCenter'>
+
+                    </div>
                     <div className='hero__header-bgBottom'>
 
                     </div>

@@ -8,7 +8,9 @@ const LinkSite = () => {
                 <div className='link__content'>
                     <a className='link__add' href="#">
                         <span className='link__add-span'>+</span>
+                        <span className='link__add-desc'>
                         Реккомендовать сайт
+                        </span>
                     </a>
 
                     <div className='link__button-wrapper '>
@@ -22,7 +24,9 @@ const LinkSite = () => {
                         <span className='link__add-span'>
                             +
                         </span>
-                        Заказать сайт
+                        <span className='link__add-desc'>
+                            Заказать сайт
+                        </span>
                     </a>
 
                     <div className='link__button-wrapper active'>
@@ -36,7 +40,9 @@ const LinkSite = () => {
                         <span className='link__add-span'>
                             +
                         </span>
+                        <span className='link__add-desc'>
                         Добавить статью
+                        </span>
                     </a>
 
                     <div className='link__button-wrapper active' style={{ border: "none" }}>

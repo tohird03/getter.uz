@@ -25,15 +25,24 @@
     }
     &__add {
         display: flex;
+        text-decoration: none;
+        align-items: center;
+    }
+    &__add-desc {
+        display: inline-block;
         align-items: center;
         font-family: 'Outfit';
         font-weight: 400;
         font-size: 11px;
         line-height: 14px;
         color:  rgba(255, 255, 255, 0.5);
-        text-decoration: none;
+
         padding: 11px;
         padding-left: 0;
+        transition: all 0.4s ease;
+    }
+    &__add-desc:hover {
+        color:  rgb(255, 255, 255);
     }
     &__add-span {
         background-color: rgba(255, 255, 255, 0.2);
@@ -62,6 +71,11 @@
         color: rgba(255, 255, 255, 0.5);
         border: none;
         cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    &__button-wrapper button:hover {
+        color: rgb(255, 255, 255);
     }
 
     &__button-wrapper &__active {
