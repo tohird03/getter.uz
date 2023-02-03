@@ -77,7 +77,7 @@
 }
 
 .nav__sticky {
-    position: fixed;
+    // position: fixed;
     transition: all 0.5s ease;
     left: 0;
     right: 0;
@@ -91,8 +91,8 @@
 }
 
 .nav__fixed {
-    background-color: white;
-    position: fixed;
+    // background-color: white;
+    // position: fixed;
     transition: all 0.5s ease;
     z-index: 1021;
     top: 0;
