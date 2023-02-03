@@ -155,9 +155,10 @@
     position: sticky;
     top: 0;
     height: 100%;
-    margin-top: -85px;
+    margin-top: -88px;
     transition: top 0.5s ease;
     z-index: 1011;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     .link {
         border-bottom: 1px solid rgba(86, 85, 85, 0.2);
@@ -165,7 +166,6 @@
 }
 
 .sticky__link-bg {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     top: 0;
     background-color: #ffffff;
     z-index: 1011;
