@@ -19,8 +19,9 @@
         font-family: NewRomanItalic;
     }
     &__heading::after {
-        content: url("../../Assets/Images/after.svg");
+        content: url("../../Assets/Images/afterWhite.svg");
         position: absolute;
+        fill: white;
         right: -20px;
         bottom: -50px;
     }

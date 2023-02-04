@@ -15,6 +15,7 @@
         }
 
         &__heading {
+            position: relative;
             font-family: 'Manrope';
             font-style: normal;
             font-weight: 300;
@@ -26,7 +27,7 @@
     }
 
     &-desc {
-        padding: 60px 0 30;
+        padding: 100px 0 30px;
 
         &__wrapper {
             display: flex;
@@ -74,7 +75,16 @@
 
         &__heading-span {
             font-style: italic;
+            position: relative;
             margin-left: 10px;
+        }
+
+        &__heading-span::after {
+            content: url("../../Assets/Images/after.svg");
+            position: absolute;
+            fill: white;
+            right: -80px;
+            bottom: -50px;
         }
 
         &__list {
@@ -87,6 +97,8 @@
             width: 25%;
             padding: 30px 50px;
         }
+
+
 
         &__item+&__item {
             border-left: 1px solid rgba(0, 0, 0, 0.2);

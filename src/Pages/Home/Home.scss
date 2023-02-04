@@ -14,6 +14,7 @@
 
     &__header-bg {
         position: absolute;
+        left: 50%;
     }
 
     &__anim {
@@ -22,6 +23,7 @@
         height: 100%;
         width: 1730px;
         height: 1730px;
+
     }
 
     &__header-bgTop {
@@ -50,7 +52,7 @@
         background: #4A2893;
         filter: blur(157px);
         transform: rotate(-180deg);
-        transform: translate(-875px, -875px);
+        // transform: translate(-875px, -875px);
         z-index: -4;
         display: flex;
         align-items: center;
@@ -63,13 +65,47 @@
         width: 730px;
         height: 730px;
         border-radius: 50%;
-        background: #151110;
+        background: #000000;
         filter: blur(212px);
         transform: rotate(-180deg);
-        z-index: -3;
+        z-index: -1;
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: gsap 30s infinite;
+    }
+
+    @keyframes gsap {
+        0% {
+            border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+        }
+        10% {
+            border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+        }
+        20% {
+            border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+        }
+        30% {
+            border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+        }
+        40% {
+            border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+        }
+        50% {
+            border-radius: 100%;
+        }
+        60% {
+            border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+        }
+        70% {
+            border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+        }
+        80% {
+            border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+        }
+        90% {
+            border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+        }
     }
 }
 

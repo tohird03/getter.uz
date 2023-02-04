@@ -34,20 +34,6 @@ const Home = () => {
         let rect = sticky.getBoundingClientRect();
         let navRect = nav.getBoundingClientRect();
 
-        console.log(rect.y);
-
-        // if(rect.y > 95) {
-        //     console.log(true);
-        //     // nav.style.top = "-96px"
-        //     // nav.classList.remove("nav__fixed")
-        // }
-
-        // if(rect.y > 750) {
-        //     // nav.classList.remove("nav__fixed")
-        //     // nav.classList.remove("bg__fix")
-        //     nav.style.top = "0"
-        // }
-        console.log(rect.y);
         if (rect.y < 96 && rect.y > 0) {
             sticky.classList.remove("scroll__top")
             sticky.classList.remove("sticky__link-bg")
@@ -73,20 +59,11 @@ const Home = () => {
     window.onscroll = () => {
         let currentScrollPos = window.pageYOffset
         if (prevScrollPos > currentScrollPos) {
-            // document.querySelector(".nav__sticky").classList.add("nav__fixed")
-            // document.querySelector(".nav__sticky").classList.add("bg__fix")
             document.querySelector(".sticky__link").classList.add("scroll__top")
-            // document.querySelector(".sticky__link").style.top = "95px"
-            // document.querySelector(".nav__sticky").classList.remove("nav__topDic")
-            // document.querySelector(".nav__sticky").style.top = "0"
         } else {
-            // document.querySelector(".nav__sticky").classList.remove("nav__fixed")
-            // document.querySelector(".nav__sticky").style.top = "-96px"
-
             document.querySelector(".sticky__link").classList.add("scroll__top")
 
             document.querySelector(".sticky__link").style.top = "0"
-            // document.querySelector(".nav__sticky").classList.add("nav__topDic")
 
         }
 
@@ -107,12 +84,13 @@ const Home = () => {
 
                     </div>
                     <div
+                        onMouseMove={e => handMouse(e)}
                         className='hero__header-bgCenter'
                         style={{transform: "translate(-700px, -700px)"}}>
 
                     </div>
                     <div className='hero__header-bgBottom'
-                    style={{transform: "translate(-315px, -315px)"}}>
+                    style={{transform: "translate(-375px, -375px)"}}>
 
                     </div>
                 </div>
