@@ -134,21 +134,137 @@ const About = () => {
                             <span className='about-call__note'>
                                 Позвони
                                 <span className='about-call__send'>
-                                    <span className='about-call__profile'>
-                                        <img src={callProfile} alt="" />
+                                    <span className='about-call__profile-wrapper'>
+                                        <span className='about-call__profile'>
+                                            <img src={callProfile} alt="" />
+                                        </span>
+                                        <span className='about-call__hover-profile'>
+                                            <div className='about-call__hover-display'>
+                                                <h3 className='about-call__hover-heading'>
+                                                    Sh
+                                                </h3>
+                                                <div className='about-call__hover-about'>
+                                                    <div className='about-call__hover-name'>
+                                                        <h4>
+                                                            Shaxriyor Oripov
+                                                        </h4>
+                                                        <p>
+                                                            5min
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        Че там с проектом? lorem20
+                                                        Че там с проектом? lorem20
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </span>
-                                    <span className='about-call__profile'>
-                                        <img src={callProfile} alt="" />
+                                    <span className='about-call__profile-wrapper'>
+                                        <span className='about-call__profile'>
+                                            <img src={callProfile} alt="" />
+                                        </span>
+                                        <span className='about-call__hover-profile'>
+                                            <div className='about-call__hover-display'>
+                                                <h3 className='about-call__hover-heading'>
+                                                    Sh
+                                                </h3>
+                                                <div className='about-call__hover-about'>
+                                                    <div className='about-call__hover-name'>
+                                                        <h4>
+                                                            Shaxriyor Oripov
+                                                        </h4>
+                                                        <p>
+                                                            5min
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        Че там с проектом? lorem20
+                                                        Че там с проектом? lorem20
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </span>
-                                    <span className='about-call__profile'>
-                                        <img src={callProfile} alt="" />
+                                    <span className='about-call__profile-wrapper'>
+                                        <span className='about-call__profile'>
+                                            <img src={callProfile} alt="" />
+                                        </span>
+                                        <span className='about-call__hover-profile'>
+                                            <div className='about-call__hover-display'>
+                                                <h3 className='about-call__hover-heading'>
+                                                    Sh
+                                                </h3>
+                                                <div className='about-call__hover-about'>
+                                                    <div className='about-call__hover-name'>
+                                                        <h4>
+                                                            Shaxriyor Oripov
+                                                        </h4>
+                                                        <p>
+                                                            5min
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        Че там с проектом? lorem20
+                                                        Че там с проектом? lorem20
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </span>
-                                    <span className='about-call__profile'>
-                                        <img src={callProfile} alt="" />
+                                    <span className='about-call__profile-wrapper'>
+                                        <span className='about-call__profile'>
+                                            <img src={callProfile} alt="" />
+                                        </span>
+                                        <span className='about-call__hover-profile'>
+                                            <div className='about-call__hover-display'>
+                                                <h3 className='about-call__hover-heading'>
+                                                    Sh
+                                                </h3>
+                                                <div className='about-call__hover-about'>
+                                                    <div className='about-call__hover-name'>
+                                                        <h4>
+                                                            Shaxriyor Oripov
+                                                        </h4>
+                                                        <p>
+                                                            5min
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        Че там с проектом? lorem20
+                                                        Че там с проектом? lorem20
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </span>
-                                    <span className='about-call__profile'>
-                                        <img src={callProfile} alt="" />
+                                    <span className='about-call__profile-wrapper'>
+                                        <span className='about-call__profile'>
+                                            <img src={callProfile} alt="" />
+                                        </span>
+                                        <span className='about-call__hover-profile'>
+                                            <div className='about-call__hover-display'>
+                                                <h3 className='about-call__hover-heading'>
+                                                    Sh
+                                                </h3>
+                                                <div className='about-call__hover-about'>
+                                                    <div className='about-call__hover-name'>
+                                                        <h4>
+                                                            Shaxriyor Oripov
+                                                        </h4>
+                                                        <p>
+                                                            5min
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        Че там с проектом? lorem20
+                                                        Че там с проектом? lorem20
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </span>
                                     </span>
+
                                 </span>
                             </span>
                             обсудим и твой проект

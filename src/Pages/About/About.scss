@@ -130,14 +130,25 @@
         }
         &__note {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
+            position: relative;
         }
         &__send {
+            position: absolute;
+            left: 200px;
             margin-left: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
+            margin-bottom: 12px;
+        }
+        &__profile-wrapper {
+            display: flex;
+            align-items: flex-end;
+
         }
         &__profile {
+
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -147,6 +158,66 @@
             box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.06);
             border-radius: 80px 80px 80px 0px;
             margin-left: 10px;
+            img {
+                position: absolute;
+            }
+        }
+
+        &__hover {
+            &-profile {
+                display: none;
+                transition: opacity 10s ease-out;
+                // opacity: 0;
+                min-width: 200px;
+                max-width: 400px;
+
+                background: #FFFFFF;
+                box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.06);
+                border-radius: 20px 20px 20px 0px;
+                padding: 12px;
+            }
+            &-display {
+                display: flex;
+                align-items: flex-start;
+            }
+            &-heading {
+                font-family: 'Outfit';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #121212;
+                background: #FFCD29;
+                // padding: 6px 7px;
+                min-width: 32px ;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-name {
+                display: flex;
+                align-items: center;
+                h4 {
+                    font-family: 'Outfit';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #121212;
+                    margin-right: 4px;
+                }
+            }
+            &-about {
+                font-family: 'Outfit';
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 14px;
+                color: #121212;
+            }
+        }
+        &__profile-wrapper:hover &__hover-profile {
+            opacity: 1;
+            display: block;
         }
         &__links {
             margin-bottom: 70px;
@@ -227,6 +298,7 @@
             line-height: 33px;
             color: #000000;
         }
+
     }
 }
 
