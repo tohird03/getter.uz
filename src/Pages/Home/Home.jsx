@@ -106,7 +106,9 @@ const Home = () => {
                     <div className='hero__header-bgTop'>
 
                     </div>
-                    <div className='hero__header-bgCenter'>
+                    <div
+                        className='hero__header-bgCenter'
+                        style={{transform: "translate(-700px, -700px)"}}>
 
                     </div>
                     <div className='hero__header-bgBottom'>
