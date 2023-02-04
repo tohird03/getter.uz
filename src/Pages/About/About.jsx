@@ -3,7 +3,7 @@ import "./About.scss"
 import Navbar from '../../Components/Navbar/Navbar';
 
 import heroImg from "../../Assets/Images/aboutHero.png"
-import descImg from "../../Assets/Images/about-desc.png"
+import descImg from "../../Assets/Images/aboutImg2x.png"
 import anim1 from "../../Assets/Images/aboutAnim1.jpg"
 import anim2 from "../../Assets/Images/aboutAnim2.svg"
 import callProfile from "../../Assets/Images/about-call.png"
