@@ -14,7 +14,6 @@
 
     &__header-bg {
         position: absolute;
-
     }
 
     &__anim {
@@ -59,14 +58,19 @@
     }
 
     &__header-bgBottom {
-        width: 930px;
-        height: 930px;
+        position: absolute;
+        // top: -865px;
+        width: 730px;
+        height: 730px;
         border-radius: 50%;
-        // background: #151110;
-        transform: translate(-50%, 50%);
-        // filter: blur(212px);
+        background: #4A2893;
+        filter: blur(157px);
         transform: rotate(-180deg);
+        transform: translate(-875px, -875px);
         z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -233,6 +237,7 @@
     .link__add-span {
         color: #121212;
         background: rgba(86, 80, 80, 0.1);
+        padding-bottom: 0.5px;
     }
 
     .link__button-wrapper {
