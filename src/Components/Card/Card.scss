@@ -103,8 +103,26 @@
         opacity: 0.6;
         transition: all 0.5s ease;
     }
+    &__like-wrapper p {
+        margin-right: 8px;
+    }
     &__like-wrapper:hover {
         opacity: 1;
+    }
+    &__dot {
+        display: inline-block;
+        color: #FFFFFF;
+        align-self: center;
+        margin-top: -10%;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 5px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: -5px;
+        margin-right: 2.5px;
     }
     &__like-btn {
         display: flex;

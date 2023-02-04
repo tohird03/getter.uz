@@ -162,7 +162,7 @@
     position: sticky;
     top: 0;
     height: 100%;
-    margin-top: -82px;
+    margin-top: -81px;
     transition: top 0.5s ease;
     z-index: 1011;
     // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -170,6 +170,7 @@
     .link {
         border-bottom: 1px solid rgba(86, 85, 85, 0.2);
     }
+
 }
 
 .sticky__link-bg {
@@ -239,4 +240,15 @@
     .link__button-wrapper button.link__active {
         color: #565050;
     }
+
+    .link__add:hover {
+
+    }
+     .link__add-desc {
+        color: rgba(86, 80, 80, 0.5);
+    }
+    .link__add-desc:hover {
+        color: rgb(86, 80, 80);
+    }
+
 }
