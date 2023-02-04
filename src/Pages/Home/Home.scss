@@ -35,7 +35,7 @@
         filter: blur(157px);
         transform: rotate(-180deg);
         transform: translate(-875px, -875px);
-        z-index: -1;
+        z-index: -5;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -51,7 +51,7 @@
         filter: blur(157px);
         transform: rotate(-180deg);
         transform: translate(-875px, -875px);
-        z-index: -1;
+        z-index: -4;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,11 +63,10 @@
         width: 730px;
         height: 730px;
         border-radius: 50%;
-        background: #4A2893;
-        filter: blur(157px);
+        background: #151110;
+        filter: blur(212px);
         transform: rotate(-180deg);
-        transform: translate(-875px, -875px);
-        z-index: -1;
+        z-index: -3;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -199,11 +198,11 @@
     }
 
     .link__add {
-        color: rgba(86, 80, 80, 0.5);
+        color: #121212;
     }
 
     .link__add-span {
-        color: rgba(86, 80, 80, 0.5);
+        color: #121212;
         background: rgba(86, 80, 80, 0.2);
     }
 
@@ -213,7 +212,7 @@
     }
 
     .link__button-wrapper button {
-        color: rgba(86, 80, 80, 0.5);
+        color: #121212;
     }
 
     .link__button-wrapper button.link__active {

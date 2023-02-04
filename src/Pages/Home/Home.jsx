@@ -111,7 +111,8 @@ const Home = () => {
                         style={{transform: "translate(-700px, -700px)"}}>
 
                     </div>
-                    <div className='hero__header-bgBottom'>
+                    <div className='hero__header-bgBottom'
+                    style={{transform: "translate(-315px, -315px)"}}>
 
                     </div>
                 </div>
