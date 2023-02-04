@@ -102,7 +102,7 @@ const Home = () => {
                 }
             }
                 className='hero__header-bg'>
-                <div>
+                <div className='hero__anim'>
                     <div className='hero__header-bgTop'>
 
                     </div>
