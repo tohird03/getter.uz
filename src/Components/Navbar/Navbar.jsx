@@ -44,9 +44,9 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='navbar__item'>
-                            <a className='navbar__link' href="#">
+                            <NavLink to="/contact" className='navbar__link'>
                                 Контакты
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

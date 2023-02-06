@@ -1,0 +1,58 @@
+.contact {
+    padding: 95px 0 0;
+    &__container {
+        background-image: url("../../Assets/Images/contact.svg");
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 80%;
+    }
+    &__heading-span {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 65px;
+        color: #969696;
+        margin-right: 30px;
+    }
+    &__heading {
+        // font-family: 'Outfit';
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 68px;
+        color: #121212;
+        // max-width: 755px;
+        margin-bottom: 64px;
+    }
+    &__heading-italic {
+        font-family: 'Outfit';
+
+    }
+    &__list {
+        list-style: none;
+        margin-bottom: 64px;
+        li {
+            margin-bottom: 32px;
+        }
+    }
+    &__address {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+        color: #121212;
+    }
+    &__address-span {
+        color: rgba(18,18,18,0.5);
+    }
+    &__network-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(18,18,18,0.5);
+        margin-bottom: 8px;
+    }
+    &__network-link > a {
+        margin-right: 12px;
+    }
+}
