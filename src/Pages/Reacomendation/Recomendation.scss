@@ -1,0 +1,67 @@
+.reco {
+    padding: 30px 0;
+    &__heading {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 74px;
+        color: #121212;
+        padding: 30px 0 40px;
+        max-width: 750px;
+    }
+    &__form {
+        padding: 50px 20px 80px;
+        background: #FAF9FB;
+        border-radius: 18px;
+        max-width: 1300px;
+    }
+    &__labels {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+    &__label {
+        position: relative;
+        display: inline-block;
+        width: 65%;
+        margin-right: 20px;
+        img {
+            
+        }
+    }
+    &__input {
+        min-height: 80px;
+        width: 100%;
+        border: 1px dashed rgba(18,18,18,0.3);
+        border-radius: 100px;
+        padding: 18px 25px 18px 75px;
+        outline: none;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #121212;
+    }
+    &__input::placeholder {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #121212;
+    }
+    &__input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translate(20px,-50%);
+        background-color: rgba(18, 18, 18, 0.1);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

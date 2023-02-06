@@ -1,27 +1,57 @@
 import React from 'react';
+import "./Recomendation.scss"
 import Navbar from '../../Components/Navbar/Navbar';
 import linkIcon from "../../Assets/Images/link.svg"
+import recoDiv from "../../Assets/Images/reco.png"
 const Recomendation = () => {
     return (<>
         <header className='light__header'>
             <Navbar />
         </header>
         <main>
-            <section>
+            <section className='reco'>
                 <div className="container">
-                    <h2>
+                    <h2 className='reco__heading'>
                         Вы можете связаться с нами в любое время через
                     </h2>
 
-                    <form>
-                        <label>
-                            <span>
-                                <img src={linkIcon} alt="Link icon" />
-                            </span>
-                            <input
-                                type="url"
-                                pattern="https://.*" required />
-                        </label>
+                    <form className='reco__form'>
+                        <div className='reco__labels'>
+                            <label className='reco__label'>
+                                <span className='reco__input-icon'>
+                                    <img src={linkIcon} alt="Link icon" />
+                                </span>
+                                <input
+                                    className='reco__input'
+                                    type="url"
+                                    pattern="https://.*" required
+                                    placeholder='Type website link here' />
+                            </label>
+
+                            <img src={recoDiv} alt="" />
+                        </div>
+                        <div className='reco__labels'>
+                            <label className='reco__label'>
+                                <span className='reco__input-icon'>
+                                    <img src={linkIcon} alt="Link icon" />
+                                </span>
+                                <input
+                                    className='reco__input'
+                                    type="url"
+                                    pattern="https://.*" required
+                                    placeholder='Type website link here' />
+                            </label>
+                            <label className='reco__label'>
+                                <span className='reco__input-icon'>
+                                    <img src={linkIcon} alt="Link icon" />
+                                </span>
+                                <input
+                                    className='reco__input'
+                                    type="url"
+                                    pattern="https://.*" required
+                                    placeholder='Type website link here' />
+                            </label>
+                        </div>
                     </form>
                 </div>
             </section>
