@@ -2,6 +2,8 @@ import React from 'react';
 import "./Recomendation.scss"
 import Navbar from '../../Components/Navbar/Navbar';
 import linkIcon from "../../Assets/Images/link.svg"
+import people from "../../Assets/Images/recoIcon.svg"
+import phone from "../../Assets/Images/recoPhone.svg"
 import recoDiv from "../../Assets/Images/reco.png"
 const Recomendation = () => {
     return (<>
@@ -28,28 +30,27 @@ const Recomendation = () => {
                                     placeholder='Type website link here' />
                             </label>
 
-                            <img src={recoDiv} alt="" />
+                            <img className="reco__div" src={recoDiv} alt="" />
                         </div>
                         <div className='reco__labels'>
                             <label className='reco__label'>
                                 <span className='reco__input-icon'>
-                                    <img src={linkIcon} alt="Link icon" />
+                                    <img src={people} alt="Link icon" />
                                 </span>
                                 <input
                                     className='reco__input'
-                                    type="url"
-                                    pattern="https://.*" required
-                                    placeholder='Type website link here' />
+                                    type="text"
+                                    required
+                                    placeholder='Write your name' />
                             </label>
                             <label className='reco__label'>
                                 <span className='reco__input-icon'>
-                                    <img src={linkIcon} alt="Link icon" />
+                                    <img src={phone} alt="Link icon" />
                                 </span>
                                 <input
                                     className='reco__input'
-                                    type="url"
-                                    pattern="https://.*" required
-                                    placeholder='Type website link here' />
+                                    type="tel"
+                                    placeholder='Your phone number' />
                             </label>
                         </div>
                     </form>

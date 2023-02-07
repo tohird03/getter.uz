@@ -21,16 +21,16 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
-
     }
     &__label {
         position: relative;
         display: inline-block;
         width: 65%;
         margin-right: 20px;
-        img {
-            
-        }
+
+    }
+    &__div {
+        margin-right: 20px;
     }
     &__input {
         min-height: 80px;
@@ -43,6 +43,9 @@
         font-size: 24px;
         line-height: 30px;
         color: #121212;
+    }
+    &__input:focus {
+        border: 1px dashed rgba(18,18,18,1);
     }
     &__input::placeholder {
         font-family: 'Outfit';
