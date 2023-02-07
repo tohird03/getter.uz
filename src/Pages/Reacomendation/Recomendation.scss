@@ -29,6 +29,23 @@
         margin-right: 20px;
 
     }
+    &__label-first {
+        width: 120%;
+        span {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        input {
+            background: #A044FA;
+            color: white;
+            border: none;
+        }
+        input::placeholder {
+            color: white;
+        }
+        input:focus {
+            border: none;
+        }
+    }
     &__div {
         margin-right: 20px;
     }
