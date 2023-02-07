@@ -13,7 +13,6 @@ const Home = () => {
     const [pageY, setPageY] = useState(0)
     const [pageX, setPageX] = useState(0)
     const [navColor, setnavColor] = useState("");
-    const [navScrollY, setNavScrollY] = useState();
 
     const handMouse = (e) => {
         setTimeout(() => {
@@ -30,10 +29,7 @@ const Home = () => {
 
     const listenScrollEvent = (e) => {
         let sticky = document.querySelector('.sticky__link')
-        let nav = document.querySelector(".nav__sticky")
         let rect = sticky.getBoundingClientRect();
-        let navRect = nav.getBoundingClientRect();
-
         if (rect.y < 96 && rect.y > 0) {
             sticky.classList.remove("scroll__top")
             sticky.classList.remove("sticky__link-bg")
@@ -66,7 +62,6 @@ const Home = () => {
             document.querySelector(".sticky__link").style.top = "0"
 
         }
-
         prevScrollPos = currentScrollPos
     }
 

@@ -63,7 +63,7 @@
     &__input {
         min-height: 80px;
         width: 100%;
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-opacity='0.4' stroke-width='2'  stroke-dasharray='3%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-opacity='0.4' stroke-width='2'  stroke-dasharray='3%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
         stroke-opacity: 0.5;
         border-radius: 40px;
         border: 0px solid;
@@ -75,6 +75,12 @@
         line-height: 30px;
         color: #121212;
         background-color: #FAF9FB;
+    }
+    &__input-unfocus {
+        border: 1px solid rgba(18, 18, 18, 0.2);
+    }
+    &__input-default {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-opacity='0.4' stroke-width='2' stroke-dasharray='3%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     }
     .bref {
         clip: rect(0 0 0 0);
@@ -88,12 +94,12 @@
         display: flex;
 
     }
+
     .bref__label {
         position: relative;
         min-height: 80px;
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-opacity='0.4' stroke-width='2' stroke-dasharray='3%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
         border-radius: 40px;
-        border: 0px solid;
+        // border: 0px solid;
         border-radius: 100px;
         padding: 18px 25px 18px 75px;
         outline: none;
@@ -111,7 +117,6 @@
         border: 1px solid rgba(18, 18, 18, 1);
         background-image: none;
         transition: border 2.6s linear;
-
     }
 
     &__input::placeholder {
