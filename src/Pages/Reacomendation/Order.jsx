@@ -16,7 +16,7 @@ const Order = () => {
             <section className='reco'>
                 <div className="container">
                     <h2 className='reco__heading'>
-                    Вы можете связаться с нами в любое время через
+                        Вы можете связаться с нами в любое время через
                     </h2>
 
                     <form className='reco__form'>
@@ -31,15 +31,19 @@ const Order = () => {
                                     required
                                     placeholder='Type company name here' />
                             </label>
-                            <label className='reco__label'>
+                            <label className='reco__label bref__label'>
                                 <span className='reco__input-icon'>
                                     <img src={orderBref} alt="Link icon" />
                                 </span>
                                 <input
-                                    className='reco__input'
-                                    type="url"
+                                    className='bref reco__input'
+                                    type="file"
                                     pattern="https://.*" required
-                                    placeholder='Upload brief' />
+                                    placeholder='' />
+                                <p>
+                                    Upload brief
+
+                                </p>
                             </label>
 
 
