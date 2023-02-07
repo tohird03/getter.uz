@@ -62,7 +62,7 @@
         color: #121212;
     }
     &__input:focus {
-        border: 1px dashed rgba(18,18,18,1);
+        border: 1px solid rgba(18,18,18,1);
     }
     &__input::placeholder {
         font-family: 'Outfit';
