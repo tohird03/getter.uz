@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom"
 import "./Navbar.scss"
+import menu from "../../Assets/Images/siteMenu.svg"
 const Navbar = () => {
     return (
         <nav className='navbar'>
@@ -14,11 +15,20 @@ const Navbar = () => {
                     <ul className='navbar__list'>
                         <li className='navbar__item'>
                             <a className='navbar__link navbar__link-menu' href="#">
-                                <span
-                                    className="navbar__menu-icon material-symbols-outlined">
-                                    apps
-                                </span>
-                                menu
+                                <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1" cy="1.5" r="1" fill="none" />
+                                    <circle cx="4" cy="1.5" r="1" fill="none" />
+                                    <circle cx="7" cy="1.5" r="1" fill="none" />
+                                    <circle cx="1" cy="4.5" r="1" fill="none" />
+                                    <circle cx="4" cy="4.5" r="1" fill="none" />
+                                    <circle cx="7" cy="4.5" r="1" fill="none" />
+                                    <circle cx="1" cy="7.5" r="1" fill="none" />
+                                    <circle cx="4" cy="7.5" r="1" fill="none" />
+                                    <circle cx="7" cy="7.5" r="1" fill="none" />
+                                </svg>
+                                <p>
+                                    menu
+                                </p>
                             </a>
                         </li>
                         <li className='navbar__item'>

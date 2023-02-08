@@ -175,5 +175,26 @@
         line-height: 25px;
         color: #121212;
         margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &__more-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__more-heshtag {
+        margin-right: 7px;
+    }
+    &__heshtag-desc {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #121212;
+        max-width: 256px;
+    }
+    &__more-notification {
+        display: flex;
+        justify-content: flex-end;
     }
 }

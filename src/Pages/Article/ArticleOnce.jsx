@@ -2,6 +2,10 @@ import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import profilePhoto from "../../Assets/Images/articleOnce.png"
 import articleImg from "../../Assets/Images/articleOnceImg.png"
+import articleMore from "../../Assets/Images/articleMore.png"
+import like from "../../Assets/Images/like.svg"
+import msg from "../../Assets/Images/msg.svg"
+import date from "../../Assets/Images/date.svg"
 const ArticleOnce = () => {
     return (<>
         <header className='light__header'>
@@ -66,6 +70,7 @@ const ArticleOnce = () => {
                             </p>
                         </div>
                     </div>
+
                     <div className='articleOnce__person'>
                         <div className='articleOnce__profile'>
                             <img className='articleOnce__profile-img' src={profilePhoto} alt="article profile photo" width="80" height="80" />
@@ -94,8 +99,8 @@ const ArticleOnce = () => {
                             More From Anton
                         </p>
 
-                        <dir>
-                            <div>
+                        <dir className="articleOnce__more-wrapper">
+                            <div className='articleOnce__more-heshtag'>
                                 <div className='article-card__heshtag'>
                                     <p className='article-card__heshtag-type'>
                                         #Ux
@@ -115,8 +120,38 @@ const ArticleOnce = () => {
                                     России на автодоме и говорит про цифровой дизайн Нескінчен..
                                 </p>
                             </div>
-                            <img src="" alt="" />
+                            <img src={articleMore} alt="" width="105" height="80" />
                         </dir>
+
+                        <div className='article-card__notification articleOnce__more-notification'>
+                            <p className='article-card__notification-desc'>
+                                <img
+                                    className='article-card__notification-icon'
+                                    src={like}
+                                    alt="Like img svg" />
+                                <span>
+                                    325
+                                </span>
+                            </p>
+                            <p className='article-card__notification-desc'>
+                                <img
+                                    className='article-card__notification-icon'
+                                    src={msg}
+                                    alt="Message img svg" />
+                                <span>
+                                    325
+                                </span>
+                            </p>
+                            <p className='article-card__notification-desc'>
+                                <img
+                                    className='article-card__notification-icon'
+                                    src={date}
+                                    alt="Like img svg" />
+                                <span>
+                                    6.01.2023
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
