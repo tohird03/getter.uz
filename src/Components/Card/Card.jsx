@@ -3,7 +3,7 @@ import "./Card.scss"
 import CardImg from "../../Assets/Images/CardImg.png"
 import like from "../../Assets/Images/like.svg"
 import before from "../../Assets/Images/hover_link.svg"
-const Card = () => {
+const Card = (props) => {
     return (
         <div className='card'>
             <div className='card__header'>

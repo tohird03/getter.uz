@@ -12,6 +12,7 @@ import Article from './Pages/Article/Article';
 import Recomendation from './Pages/Reacomendation/Recomendation';
 import Contact from './Pages/Contact/Contact';
 import Order from './Pages/Reacomendation/Order';
+import ArticleOnce from './Pages/Article/ArticleOnce';
 
 function App() {
   return (<div className='App'>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/article' element={<Article/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/order' element={<Order/>}/>
+        <Route path='/articleonce' element={<ArticleOnce/>}/>
         <Route path='/recomendation' element={<Recomendation/>}/>
       </Routes>
       <Footer/>

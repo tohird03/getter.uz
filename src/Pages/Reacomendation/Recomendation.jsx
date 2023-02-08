@@ -116,7 +116,9 @@ const Recomendation = () => {
                                     onChange={e => {
                                         setData({ ...data, phone: e.target.value })
                                     }}
-                                    type="tel"
+                                    type="number"
+                                    minLength="9"
+                                    maxLength="9"
                                     placeholder='Your phone number' />
                             </label>
                         </div>

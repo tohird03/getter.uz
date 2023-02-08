@@ -134,7 +134,9 @@ const Order = () => {
                                     onChange={e => {
                                         setData({ ...data, phone: e.target.value })
                                     }}
-                                    type="tel"
+                                    type="number"
+                                    maxLength="9"
+                                    minLength="9"
                                     placeholder='Your phone number' />
                             </label>
                         </div>

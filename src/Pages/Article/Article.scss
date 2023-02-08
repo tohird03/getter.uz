@@ -1,9 +1,11 @@
 .article {
     padding: 40px 0;
-    &__container  {
+
+    &__container {
         display: flex;
         align-items: flex-start;
     }
+
     &-sidebar {
         padding: 50px 56px 125px;
         background: #EEEEEE;
@@ -11,17 +13,20 @@
         max-width: 20%;
         width: 100%;
         margin-right: 63px;
+
         &__heading {
-            list-style:disc outside none;
+            list-style: disc outside none;
             display: list-item;
             font-weight: 700;
             font-size: 22px;
             line-height: 28px;
             margin-bottom: 20px;
         }
+
         &__list {
             list-style: none;
         }
+
         &__button {
             font-weight: 400;
             font-size: 16px;
@@ -33,8 +38,142 @@
             cursor: pointer;
         }
     }
+
     &__cards {
         max-width: 55%;
         width: 100%;
+    }
+}
+
+.articleOnce {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+
+    &__about {
+        display: flex;
+        align-items: flex-start;
+        padding: 50px 100px 100px 0;
+        border-right: 1px solid rgba(204, 204, 204, 0.7);
+    }
+
+    &__networks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+
+    &__btn {
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-color: #F3F3F3;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    &__article {
+        max-width: 700px;
+        min-width: 650px;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 66px;
+        color: #121212;
+        margin-bottom: 40px;
+    }
+
+    &__upload-time {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #121212;
+        margin-bottom: 40px;
+    }
+
+    &__upload-ago {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #121212;
+        opacity: 0.28;
+        margin-left: 35px;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__profile-img {
+        margin-right: 12px;
+    }
+
+    &__profile-name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #121212;
+        margin-bottom: 2px;
+    }
+
+    &__profile-job {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #0038FF;
+    }
+
+    &__article-img {
+        margin-bottom: 40px;
+    }
+
+    &__article-heading {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        color: #121212;
+        margin-bottom: 20px;
+    }
+
+    &__article-desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #121212;
+        margin-bottom: 32px;
+    }
+
+    &__person {
+        padding: 50px 35px;
+        min-height: 400px;
+    }
+
+    &__person-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #121212;
+        opacity: 0.4;
+        max-width: 270px;
+        margin-bottom: 20px;
+    }
+
+    &__more-desc {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #121212;
+        margin-top: 50px;
     }
 }
