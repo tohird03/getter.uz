@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ArticleCard from '../../Components/ArticleCard/ArticleCard';
 import Navbar from '../../Components/Navbar/Navbar';
+import { Context } from '../../Context/ApiContext';
 import "./Article.scss"
 const Article = () => {
+    const { article } = useContext(Context)
+    console.log(article);
+
     return (
         <>
             <header className='light__header'>
@@ -59,15 +63,20 @@ const Article = () => {
                             </ul>
                         </div>
                         <div className='article__cards'>
+                            {
+                                article && article?.map(item => {
+                                    return <ArticleCard data={item}/>
+                                })
+                            }
+
+                            {/* <ArticleCard />
                             <ArticleCard />
                             <ArticleCard />
                             <ArticleCard />
                             <ArticleCard />
                             <ArticleCard />
                             <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
+                            <ArticleCard /> */}
                         </div>
                     </div>
                 </section>

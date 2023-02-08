@@ -6,8 +6,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import { Context } from '../../Context/ApiContext';
 
 const Portfolio = () => {
-    const { portfolio, setPortfolio } = useContext(Context)
-    console.log(portfolio);
+    const { portfolioSite } = useContext(Context)
     return (
         <>
             <header className='light__header'>
@@ -17,10 +16,16 @@ const Portfolio = () => {
                 <section className='portfolio'>
                     <div className="container portfolio__container">
                         {
-                            portfolio?.data?.map((item, index) => {
-                                return <Card data={item}/>
+
+                            portfolioSite && portfolioSite?.map((item, index) => {
+                                return <Card
+                                name={item?.name}
+                                img={item?.image}
+                                link={item?.link}
+                                author={item?.author}/>
                             })
                         }
+                        {/* <Card />
                         <Card />
                         <Card />
                         <Card />
@@ -38,8 +43,7 @@ const Portfolio = () => {
                         <Card />
                         <Card />
                         <Card />
-                        <Card />
-                        <Card />
+                        <Card /> */}
                     </div>
                 </section>
             </main>

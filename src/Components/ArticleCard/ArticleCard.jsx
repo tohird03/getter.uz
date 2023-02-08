@@ -6,26 +6,23 @@ import like from "../../Assets/Images/like.svg"
 import msg from "../../Assets/Images/msg.svg"
 import date from "../../Assets/Images/date.svg"
 import cardImg from "../../Assets/Images/articleCardImg.png"
-const ArticleCard = () => {
+const ArticleCard = ({ data }) => {
+    console.log(data);
     return (
         <div className='article-card'>
             <div className='article-card__text'>
                 <div className='article-card__heshtag'>
-                    <p className='article-card__heshtag-type'>
-                        #Ux
-                    </p>
-                    <p className='article-card__heshtag-type'>
-                        #Ui
-                    </p>
-                    <p className='article-card__heshtag-type'>
-                        #Uxlaw
-                    </p>
-                    <p className='article-card__heshtag-type'>
-                        #Tutorial
-                    </p>
+
+                    {
+                        data?.hashtag?.split("#")?.splice(1)?.map(el => {
+                            return <p className='article-card__heshtag-type'>
+                                #{el}
+                            </p>
+                        })
+                    }
                 </div>
                 <h2 className='article-card__title'>
-                    России на автодоме и говорит про цифровой дизайн Нескінченна прокрутка: Коли...
+                    {data?.description}
                 </h2>
                 <div className='article-card__footer'>
                     <div className='article-card__author'>
@@ -47,7 +44,7 @@ const ArticleCard = () => {
                                 src={like}
                                 alt="Like img svg" />
                             <span>
-                                325
+                                {data?.likes}
                             </span>
                         </p>
                         <p className='article-card__notification-desc'>

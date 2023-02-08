@@ -3,14 +3,14 @@ import "./Card.scss"
 import CardImg from "../../Assets/Images/CardImg.png"
 import like from "../../Assets/Images/like.svg"
 import before from "../../Assets/Images/hover_link.svg"
-const Card = (props) => {
+const Card = ({name, img, link, author}) => {
     return (
         <div className='card'>
             <div className='card__header'>
                 <img className='card__img' src={CardImg} alt="Card img" />
                 <div className='card__hover'>
                     <h3>
-                        www.agrobank.uz
+                        {link}
                     </h3>
                     <div>
                         <div className='card__like-wrapper'>
@@ -24,17 +24,17 @@ const Card = (props) => {
                                 </svg>
                             </button>
                         </div>
-                        <a href="#">
+                        <a target="_blank" href={link}>
                             <img src={before} alt="Before page" />
                         </a>
                     </div>
                 </div>
             </div>
             <h3 className='card__title'>
-                Agro bank
+                {author}
             </h3>
             <p className='card__desc'>
-                Lls oks
+                {name}
             </p>
         </div>
     );
