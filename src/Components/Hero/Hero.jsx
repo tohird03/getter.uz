@@ -6,8 +6,36 @@ import heroVector from "../../Assets/Images/Vector.png"
 import HeroTooltip from './HeroTooltip';
 import LinkSite from '../Link/LinkSite';
 
+import img from "../../Assets/Images/IMAGE.png"
+import img1 from "../../Assets/Images/IMAGE (1).png"
+import img2 from "../../Assets/Images/IMAGE (2).png"
+import img3 from "../../Assets/Images/IMAGE (3).png"
+import img4 from "../../Assets/Images/IMAGE (4).png"
+import img5 from "../../Assets/Images/IMAGE (5).png"
+import img6 from "../../Assets/Images/IMAGE (6).png"
 const Hero = () => {
-    let arr = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2]
+    let arr = [
+        {
+            name: "Abdulloh",
+            img: img,
+            job: "Designer"
+        },
+        {
+            name: "Ikromov Davron",
+            img: img1,
+            job: "Designer"
+        },
+        {
+            name: "Jalolov Abubakir",
+            img: img2,
+            job: "Backend developer"
+        },
+        {
+            name: "Nasrullayev Jaloliddin",
+            img: img3,
+            job: "Backend developer"
+        },
+    ]
     return (
         <div className="hero">
             <div className="container">
