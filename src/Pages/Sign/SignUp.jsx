@@ -62,25 +62,31 @@ const SignUp = () => {
 
                     <div className='sign__findAcc'>
                         <p className='sign__acc'>
-                            Have an accaunt?
+                            Есть аккаунт?
                         </p>
                         <NavLink to="/signin" className='sign__link' href="#">
                             Войти
                         </NavLink>
                     </div>
 
-                    <form className='sign__form'>
+                    <form className='sign__form sign-up__form'>
+                        <label className='sign-up__avatar' for="avatar">
+                            <img src={avatar} alt="Img avatar icon" />
+                            Загрузить фото
+                            <input type="file" name="avatar" id="avatar" />
+                        </label>
                         <div className='sign__form-wrapper'>
                             <div>
                                 <input
                                     className='sign__input'
                                     type="text"
-                                    placeholder='Full name'
+                                    placeholder='ФИО'
                                     required />
+
                                 <input
                                     className='sign__input'
-                                    type="text"
-                                    placeholder='Occupation'
+                                    type="email"
+                                    placeholder='example@gmailcom'
                                     required />
 
                                 <div className='sign__phone'>
@@ -92,25 +98,30 @@ const SignUp = () => {
                                         onChange={setValue} />
                                 </div>
                             </div>
-
-                            <label className='sign-up__avatar' for="avatar">
-                                Upload your Avatar
-                                <img src={avatar} alt="Img avatar icon" />
-                                <input type="file" name="avatar" id="avatar" />
-                            </label>
                         </div>
-
-                        <div className='sign__up-password'>
+                        <div className='sign__up'>
                             <input
                                 className='sign__input'
-                                type="email"
-                                placeholder='example@gmailcom'
+                                type="text"
+                                placeholder='Occupation'
                                 required />
                             <input
                                 className='sign__input'
                                 type="password"
                                 placeholder='Password'
                                 required />
+
+                            <div className='sign-up__ocupation'>
+                                <p>
+                                    #Ux designer
+                                </p>
+                                <p>
+                                #Ux Strateg
+                                </p>
+                                <p>
+                                #Ux Analys
+                                </p>
+                            </div>
                         </div>
                     </form>
                 </div>

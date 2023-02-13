@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import PhoneInput from 'react-phone-input-2'
+import OtpInput from 'react18-input-otp';
+import 'react-phone-input-2/lib/style.css'
+
 import SignNavbar from '../../Components/Navbar/SignNavbar';
 import "../Home/Home.scss"
 import "./Sign.scss"
@@ -9,6 +13,8 @@ const SignIn = () => {
     // HERO BG ANIMATION
     const [pageY, setPageY] = useState(0)
     const [pageX, setPageX] = useState(0)
+    const [value, setValue] = useState()
+
     const handMouse = (e) => {
         console.log(e);
         setPageY(e.pageY)
@@ -54,12 +60,13 @@ const SignIn = () => {
                         </NavLink>
                     </div>
 
-                    <form className='sign__form'>
-                        <input
-                            className='sign__input'
-                            type="email"
-                            placeholder='example@gmailcom'
-                            required />
+                    <form className='sign__form sign-in__form' >
+                        <PhoneInput
+                            className='sign__input sign__input-phone'
+                            placeholder="Enter phone number"
+                            value={value}
+                            country={'uz'}
+                            onChange={setValue} />
                         <input
                             className='sign__input'
                             type="password"

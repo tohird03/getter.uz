@@ -7,6 +7,17 @@
     padding-top: 50px;
     position: relative;
     z-index: 2000;
+
+    &-in__form {
+        display: flex;
+    }
+
+    &-up__form {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
     &__container {
         padding-left: 120px;
     }
@@ -49,10 +60,6 @@
 
     }
 
-    &__form {
-        padding: 0 0 0 10px;
-    }
-
     &__form-wrapper {
         display: flex;
         align-items: flex-start;
@@ -84,6 +91,7 @@
         border-bottom: 1px solid;
         border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%) 1;
         transition: all 1s ease;
+        margin-bottom: 40px;
 
         span {
             transition: all 1s ease;
@@ -180,25 +188,48 @@
     }
 
     &-up__avatar {
-        margin-left: 10px;
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 8px;
-        width: 160px;
-        height: 120px;
+        width: 134px;
+        height: 134px;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 22px;
-        text-align: center;
-        padding: 20px 30px 0;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 0.4);
+
         cursor: pointer;
+        margin-right: 64px;
+
+        img {
+            margin-bottom: 10px;
+        }
 
         input {
             display: none;
+        }
+    }
+
+    &-up__ocupation {
+        width: 340px;
+        min-height: 122px;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(12px);
+        border-radius: 3px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-right: 30px;
         }
     }
 }

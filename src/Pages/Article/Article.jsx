@@ -26,37 +26,57 @@ const Article = () => {
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Аналитика
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Ux-теории
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Психология в дизайне
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Типографика
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Цвет
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Брендинг
                                     </button>
                                 </li>
                                 <li className='article-sidebar__item'>
                                     <button className='article-sidebar__button'>
-                                        Интерфейсы
+                                        Практика
+                                    </button>
+                                </li>
+                                <li className='article-sidebar__item'>
+                                    <button className='article-sidebar__button'>
+                                        Карьера
+                                    </button>
+                                </li>
+                                <li className='article-sidebar__item'>
+                                    <button className='article-sidebar__button'>
+                                        Тренды
+                                    </button>
+                                </li>
+                                <li className='article-sidebar__item'>
+                                    <button className='article-sidebar__button'>
+                                        Полезные
+                                    </button>
+                                </li>
+                                <li className='article-sidebar__item'>
+                                    <button className='article-sidebar__button'>
+                                        Разное
                                     </button>
                                 </li>
                             </ul>
@@ -64,7 +84,7 @@ const Article = () => {
                         <div className='article__cards'>
                             {
                                 article && article?.map(item => {
-                                    return <ArticleCard data={item}/>
+                                    return <ArticleCard data={item} />
                                 })
                             }
 
