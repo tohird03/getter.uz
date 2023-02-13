@@ -5,7 +5,6 @@ import { Context } from '../../Context/ApiContext';
 import "./Article.scss"
 const Article = () => {
     const { article } = useContext(Context)
-    console.log(article);
 
     return (
         <>

@@ -63,7 +63,9 @@
         display: block;
         margin-bottom: 28px;
     }
-
+    &__input::placeholder {
+        color: rgba(255, 255, 255, 0.6)
+    }
     &__button-wrapper {
         border-top: 1px solid;
         border-bottom: 1px solid;
@@ -87,7 +89,7 @@
         border: none;
     }
     &__button:hover {
-        animation: link ease 1s infinite;
+        animation: link ease 1s forwards;
     }
     @keyframes link {
         0% {

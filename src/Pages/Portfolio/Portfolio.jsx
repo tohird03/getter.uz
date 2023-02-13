@@ -7,6 +7,7 @@ import { Context } from '../../Context/ApiContext';
 
 const Portfolio = () => {
     const { portfolioSite } = useContext(Context)
+    console.log(portfolioSite);
     return (
         <>
             <header className='light__header'>
