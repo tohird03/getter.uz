@@ -14,6 +14,7 @@ import Contact from './Pages/Contact/Contact';
 import Order from './Pages/Reacomendation/Order';
 import ArticleOnce from './Pages/Article/ArticleOnce';
 import Profile from './Pages/Profile/Profile';
+import ArticleAdd from './Pages/ArticleAdd/ArticleAdd';
 
 function App() {
   return (<div className='App'>
@@ -24,10 +25,11 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/article' element={<Article/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/order' element={<Order/>}/>
+        <Route path='/article' element={<Article/>}/>
         <Route path='/articleonce' element={<ArticleOnce/>}/>
+        <Route path='/articleadd' element={<ArticleAdd/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/recomendation' element={<Recomendation/>}/>
       </Routes>
