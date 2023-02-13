@@ -5,6 +5,7 @@ import linkedin from "../../Assets/Images/linkedin.svg"
 import twitter from "../../Assets/Images/twitter.svg"
 import facebook from "../../Assets/Images/facebook.svg"
 import instagram from "../../Assets/Images/instagram.svg"
+import { Link, NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className='footer'>
@@ -12,19 +13,39 @@ const Footer = () => {
                 <div className="container footer-top__container">
                     <ul className='footer-top__list'>
                         <li className='footer-top__item'>
-                            <a className='footer-top__link' href="#">О нас</a>
+                            <NavLink
+                                to="/contact"
+                                className='footer-top__link'>
+                                О нас
+                            </NavLink>
                         </li>
                         <li className='footer-top__item'>
-                            <a className='footer-top__link' href="#">Продукты</a>
+                            <NavLink
+                                to="/product"
+                                className='footer-top__link' >
+                                Продукты
+                            </NavLink>
                         </li>
                         <li className='footer-top__item'>
-                            <a className='footer-top__link' href="#">Портфолио</a>
+                            <NavLink
+                                to="/portfolio"
+                                className='footer-top__link'>
+                                Портфолио
+                            </NavLink>
                         </li>
                         <li className='footer-top__item'>
-                            <a className='footer-top__link' href="#">Статья</a>
+                            <NavLink
+                                to="/article"
+                                className='footer-top__link'>
+                                Статья
+                            </NavLink>
                         </li>
                         <li className='footer-top__item'>
-                            <a className='footer-top__link' href="#">Контакты</a>
+                            <NavLink
+                                to="/contact"
+                                className='footer-top__link'>
+                                Контакты
+                            </NavLink>
                         </li>
                     </ul>
 
@@ -88,9 +109,11 @@ const Footer = () => {
                     <p className='footer-bottom__logos'>
                         Design by:
 
-                        <span className='footer-bottom__logo'>
+                        <NavLink
+                            to="/"
+                            className='footer-bottom__logo'>
                             Getter
-                        </span>
+                        </NavLink>
                     </p>
                 </div>
             </div>
