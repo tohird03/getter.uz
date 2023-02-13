@@ -88,7 +88,7 @@
         &__list {
             list-style: none;
             display: flex;
-            border-top: 1px solid rgba(18,18,18,0.2 );
+            border-top: 1px solid rgba(18, 18, 18, 0.2);
         }
 
         &__item {
@@ -99,7 +99,7 @@
 
 
         &__item+&__item {
-            border-left: 1px solid rgba(18,18,18,0.2);
+            border-left: 1px solid rgba(18, 18, 18, 0.2);
         }
 
         &__list-heading {
@@ -120,17 +120,20 @@
 
     &-call {
         padding: 45px 0;
+
         &__heading {
             font-weight: 500;
             font-size: 56px;
             line-height: 65px;
-            margin-bottom: 54px;
+            margin-bottom: 64px;
         }
+
         &__note {
             display: flex;
             align-items: flex-end;
             position: relative;
         }
+
         &__send {
             position: absolute;
             left: 200px;
@@ -139,25 +142,27 @@
             align-items: flex-end;
             margin-bottom: 12px;
         }
+
         &__profile-wrapper {
             display: flex;
             align-items: flex-end;
             padding: 4px;
-            // background: #0D99FF;
-            border: 1px solid rgba(18,18,18,0.1);
-            box-shadow: 0px 5px 17px rgba(18,18,18,0.06);
+            border: 1px solid rgba(18, 18, 18, 0.1);
+            box-shadow: 0px 5px 17px rgba(18, 18, 18, 0.06);
             border-radius: 20px 20px 20px 0px;
             margin-right: 10px;
 
         }
+
         &__profile {
             display: flex;
             align-items: flex-start;
             justify-content: center;
         }
+
         &__profile-wrapper:hover {
             background: #FFFFFF;
-            box-shadow: 0px 5px 17px rgba(18,18,18,0.06);
+            box-shadow: 0px 5px 17px rgba(18, 18, 18, 0.06);
             border-radius: 15px 15px 15px 0px;
             animation-name: commit;
             animation-duration: 0.5s;
@@ -167,9 +172,10 @@
             overflow-wrap: break-word;
         }
 
-        &__profile-wrapper:hover &__profile > img {
+        &__profile-wrapper:hover &__profile>img {
             margin-right: 5px;
         }
+
         &__profile-wrapper:hover &__hover-profile {
             clip-path: circle(100%);
             clip: rect(0, auto, auto, 0);
@@ -187,11 +193,13 @@
                 // max-height: 10px;
                 width: 100px;
             }
+
             100% {
                 height: auto;
                 width: 250px;
             }
         }
+
         &__hover {
             &-profile {
                 clip: rect(0, auto, auto, 0);
@@ -203,10 +211,12 @@
                 width: 1px;
                 transition: all 0.5s ease;
             }
+
             &-display {
                 display: flex;
                 align-items: flex-start;
             }
+
             &-heading {
                 font-family: 'Outfit';
                 font-weight: 500;
@@ -214,7 +224,7 @@
                 line-height: 20px;
                 color: #121212;
                 background: #FFCD29;
-                min-width: 32px ;
+                min-width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 display: flex;
@@ -222,9 +232,11 @@
                 justify-content: center;
                 margin-right: 6px;
             }
+
             &-name {
                 display: flex;
                 align-items: center;
+
                 h4 {
                     font-family: 'Outfit';
                     font-weight: 500;
@@ -234,6 +246,7 @@
                     margin-right: 4px;
                 }
             }
+
             &-about {
                 max-width: 200px;
                 word-wrap: break-word;
@@ -243,21 +256,26 @@
                 line-height: 14px;
                 color: #121212;
             }
+
             &-desc {
                 overflow: hidden;
                 width: 190px;
             }
         }
+
         &__profile-wrapper:hover &__hover-profile {
             opacity: 1;
             display: block;
         }
+
         &__links {
             margin-bottom: 70px;
         }
+
         &__link-wrap {
             display: flex;
         }
+
         &__link {
             text-decoration: none;
             display: flex;
@@ -267,19 +285,84 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 29px;
-            color: #000;
+            color: #121212;
         }
+
+        &__button-one {
+            background: #FFFFFF;
+            border: 5px solid #000000;
+            border-radius: 100px;
+            transform: rotate(-12deg);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 8px 15px;
+            gap: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            margin-right: 5px;
+            line-height: 68px;
+            color: #121212;
+            text-decoration: none;
+        }
+
+        &__button-two {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 18px;
+            gap: 5px;
+            background: #F9FE00;
+            border-radius: 100px;
+            transform: rotate(10deg);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            margin-right: 5px;
+            line-height: 68px;
+            text-decoration: none;
+            color: #121212;
+        }
+
+        &__button-three {
+            position: relative;
+            top: -20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 8px 18px;
+            gap: 10px;
+            background: #000000;
+            border-radius: 100px;
+            transform: rotate(-3.43deg);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            margin-right: 5px;
+            line-height: 68px;
+            letter-spacing: -0.03em;
+            text-decoration: none;
+            color: white;
+        }
+
         &__cards {
             display: flex;
         }
+
         &__card {
-            width: 640px;
+            width: 50%;
             background-color: #F5F5F5;
             border-radius: 20px;
             padding: 50px 40px;
-            margin-right: 30px;
+            margin-right: 20px;
             margin-bottom: 20px;
         }
+
         &__card h4 {
             font-weight: 700;
             font-size: 20px;
@@ -287,21 +370,25 @@
             margin-bottom: 35px;
             max-width: 300px;
         }
+
         &__card div {
             display: flex;
         }
+
         &__card:nth-child(1) {
             background-image: url("../../Assets/Images/aboutnetwork.png");
             background-repeat: no-repeat;
             background-position: bottom right;
 
         }
+
         &__card:nth-child(2) {
             background-image: url("../../Assets/Images/aboutcoursebg.png");
             background-repeat: no-repeat;
             background-position: bottom right;
 
         }
+
         &__network {
             background-color: #FFFFFF;
             width: 42px;
@@ -312,20 +399,24 @@
             border-radius: 12px;
             margin-right: 10px;
             transition: all 0.3s ease;
+
             svg {
                 transition: all 0.3s ease;
                 fill: #121212;
             }
 
         }
+
         &__network:hover {
             transition: all 0.3s ease;
             background-color: #8000FF;
         }
+
         &__network:hover svg {
             transition: all 0.3s ease;
             fill: white;
         }
+
         &__set {
             width: 440px;
             background-color: #F5F5F5;
@@ -334,6 +425,7 @@
             margin-right: 30px;
             margin-bottom: 20px;
         }
+
         &__set h4 {
             font-family: 'Outfit';
             font-style: normal;

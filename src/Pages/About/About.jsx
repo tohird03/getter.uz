@@ -2,7 +2,7 @@ import React from 'react';
 import "./About.scss"
 import Navbar from '../../Components/Navbar/Navbar';
 
-import heroImg from "../../Assets/Images/aboutHero.png"
+import heroImg from "../../Assets/Images/About__hero.svg"
 import descImg from "../../Assets/Images/aboutImg2x.png"
 import anim1 from "../../Assets/Images/aboutAnim1.jpg"
 import anim2 from "../../Assets/Images/aboutAnim2.svg"
@@ -278,11 +278,21 @@ const About = () => {
                                     <img src={mail} alt="" />
                                     hello@getter.com
                                 </a>
+                                <a className='about-call__link' href="https://goo.gl/maps/RKNFZ4hK2pBC5jWx6">
+                                    <img src={location} alt="" />
+                                    Buyuk Ipakyoli, orientir-Parkentskiy evos
+                                </a>
+
+                                <a href='#' className='about-call__button-one'>
+                                    Хочу заказать
+                                </a>
+                                <a href='#' className='about-call__button-two'>
+                                    проект
+                                </a>
+                                <a href='#' className='about-call__button-three'>
+                                    отправить
+                                </a>
                             </div>
-                            <a className='about-call__link' href="https://goo.gl/maps/RKNFZ4hK2pBC5jWx6">
-                                <img src={location} alt="" />
-                                Buyuk Ipakyoli, orientir-Parkentskiy evos
-                            </a>
                         </div>
 
                         <div>
@@ -334,11 +344,6 @@ const About = () => {
                                         Бесплатный онлайн тест  для подготовки к президентским школам
                                     </h4>
                                 </div>
-                            </div>
-                            <div className="about-call__set">
-                                <h4>
-                                    Бесплатный онлайн тест  для подготовки к президентским школам
-                                </h4>
                             </div>
                         </div>
                     </div>
