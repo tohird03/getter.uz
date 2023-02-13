@@ -126,6 +126,8 @@
 }
 
 .sign-navbar {
+    position: relative;
+    z-index: 2000;
     padding: 25px 0 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     &__logo {

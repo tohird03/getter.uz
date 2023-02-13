@@ -63,12 +63,12 @@ const Navbar = () => {
 
                 <ul className='navbar__right-list'>
                     <li className='navbar__right-item'>
-                        <a className='navbar__right-link' href="#">
+                        <NavLink to="/order" className='navbar__right-link'>
                             Заказать проект
-                        </a>
+                        </NavLink>
                     </li>
                     <li className='navbar__right-item'>
-                        <NavLink to="/signin" className='navbar__right-link' href="#">
+                        <NavLink to="/signin" className='navbar__right-link'>
                             Профиль
                         </NavLink>
                     </li>

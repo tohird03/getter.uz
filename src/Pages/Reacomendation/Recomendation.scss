@@ -76,12 +76,15 @@
         color: #121212;
         background-color: #FAF9FB;
     }
+
     &__input-unfocus {
         border: 1px solid rgba(18, 18, 18, 0.2);
     }
+
     &__input-default {
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-opacity='0.4' stroke-width='2' stroke-dasharray='3%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     }
+
     .bref {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
@@ -109,10 +112,12 @@
         color: #121212;
         display: flex;
         align-items: center;
+
         span {
             left: 0;
         }
     }
+
     &__input:focus {
         border: 1px solid rgba(18, 18, 18, 1);
         background-image: none;
@@ -139,5 +144,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    &__order-send {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #121212;
+        border-radius: 100px;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 25px 195px;
+        cursor: pointer;
     }
 }

@@ -33,21 +33,21 @@ const Order = () => {
     const handleBref = (e) => {
         if (data.bref !== "") {
             setStatusBref({ ...statusBref, unfocus: true, default: false })
-        }else {
+        } else {
             setStatusBref({ ...statusBref, unfocus: false, default: true })
         }
     }
     const handleName = (e) => {
         if (data.name !== "") {
             setStatusName({ ...statusName, unfocus: true, default: false })
-        }else {
+        } else {
             setStatusName({ ...statusName, unfocus: false, default: true })
         }
     }
     const handlePhone = (e) => {
         if (data.phone !== "") {
             setStatusPhone({ ...statusPhone, unfocus: true, default: false })
-        }else {
+        } else {
             setStatusPhone({ ...statusPhone, unfocus: false, default: true })
         }
     }
@@ -98,8 +98,6 @@ const Order = () => {
                                     {bref}
                                 </p>
                             </label>
-
-
                         </div>
                         <div className='reco__labels'>
                             <label className='reco__label'>
@@ -137,9 +135,13 @@ const Order = () => {
                                     type="number"
                                     maxLength="9"
                                     minLength="9"
-                                    placeholder='Your phone number' />
+                                    placeholder='Your phone number'
+                                    required />
                             </label>
                         </div>
+                        <button className='reco__order-send'>
+                            Send your info now
+                        </button>
                     </form>
                 </div>
             </section>

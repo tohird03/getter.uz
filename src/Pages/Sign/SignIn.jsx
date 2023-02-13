@@ -35,7 +35,6 @@ const SignIn = () => {
                     </div>
                     <div className='hero__header-bgBottom'
                         style={{ transform: "translate(-375px, -375px)" }}>
-
                     </div>
                 </div>
             </div>
