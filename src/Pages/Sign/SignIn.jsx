@@ -22,9 +22,19 @@ const SignIn = () => {
                     left: `${pageX}px`
                 }
             }
-                className='hero__header-bgTop'>
-                <div className='hero__header-bgCenter'>
-                    <div className='hero__header-bgBottom'>
+                className='hero__header-bg'>
+                <div className='hero__anim'>
+                    <div className='hero__header-bgTop'>
+
+                    </div>
+                    <div
+                        onMouseMove={e => handMouse(e)}
+                        className='hero__header-bgCenter'
+                        style={{ transform: "translate(-700px, -700px)" }}>
+
+                    </div>
+                    <div className='hero__header-bgBottom'
+                        style={{ transform: "translate(-375px, -375px)" }}>
 
                     </div>
                 </div>

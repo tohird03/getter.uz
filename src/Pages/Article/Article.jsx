@@ -68,14 +68,6 @@ const Article = () => {
                                 })
                             }
 
-                            {/* <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard />
-                            <ArticleCard /> */}
                         </div>
                     </div>
                 </section>

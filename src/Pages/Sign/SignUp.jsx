@@ -1,4 +1,4 @@
-import React, { useState, Component  } from 'react';
+import React, { useState, Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PhoneInput from 'react-phone-input-2'
 import OtpInput from 'react18-input-otp';
@@ -8,6 +8,7 @@ import SignNavbar from '../../Components/Navbar/SignNavbar';
 import "../Home/Home.scss"
 import "./Sign.scss"
 import heroVector from "../../Assets/Images/Vector.png"
+import avatar from "../../Assets/Images/avatar.svg"
 
 const SignUp = () => {
     const state = { otp: '' };
@@ -33,9 +34,19 @@ const SignUp = () => {
                     left: `${pageX}px`
                 }
             }
-                className='hero__header-bgTop'>
-                <div className='hero__header-bgCenter'>
-                    <div className='hero__header-bgBottom'>
+                className='hero__header-bg'>
+                <div className='hero__anim'>
+                    <div className='hero__header-bgTop'>
+
+                    </div>
+                    <div
+                        onMouseMove={e => handMouse(e)}
+                        className='hero__header-bgCenter'
+                        style={{ transform: "translate(-700px, -700px)" }}>
+
+                    </div>
+                    <div className='hero__header-bgBottom'
+                        style={{ transform: "translate(-375px, -375px)" }}>
 
                     </div>
                 </div>
@@ -59,42 +70,54 @@ const SignUp = () => {
                     </div>
 
                     <form className='sign__form'>
-                        <input
-                            className='sign__input'
-                            type="text"
-                            placeholder='Username'
-                            required />
+                        <div className='sign__form-wrapper'>
+                            <div>
+                                <input
+                                    className='sign__input'
+                                    type="text"
+                                    placeholder='Full name'
+                                    required />
+                                <input
+                                    className='sign__input'
+                                    type="text"
+                                    placeholder='Occupation'
+                                    required />
 
-                        <div className='sign__phone'>
-                            <PhoneInput
-                                className='sign__input sign__input-phone'
-                                placeholder="Enter phone number"
-                                value={value}
-                                country={'uz'}
-                                onChange={setValue} />
-                            <OtpInput
-                                className='sign__otp-input'
-                                value={passwordValue} onChange={handleChange} numInputs={4}
-                                placeholder={"****"}
-                                separator={<span className='sign__otp-among'></span>} />
+                                <div className='sign__phone'>
+                                    <PhoneInput
+                                        className='sign__input sign__input-phone'
+                                        placeholder="Enter phone number"
+                                        value={value}
+                                        country={'uz'}
+                                        onChange={setValue} />
+                                </div>
+                            </div>
+
+                            <label className='sign-up__avatar' for="avatar">
+                                Upload your Avatar
+                                <img src={avatar} alt="Img avatar icon" />
+                                <input type="file" name="avatar" id="avatar" />
+                            </label>
                         </div>
 
-                        <input
-                            className='sign__input'
-                            type="email"
-                            placeholder='example@gmailcom'
-                            required />
-                        <input
-                            className='sign__input'
-                            type="password"
-                            placeholder='enter your password'
-                            required />
+                        <div className='sign__up-password'>
+                            <input
+                                className='sign__input'
+                                type="email"
+                                placeholder='example@gmailcom'
+                                required />
+                            <input
+                                className='sign__input'
+                                type="password"
+                                placeholder='Password'
+                                required />
+                        </div>
                     </form>
                 </div>
                 <div className='sign__button-wrapper'>
                     <div className="container sign__container">
                         <button className='sign__button'>
-                            <span>Войти</span>
+                            <span>зарегистрироваться</span>
                             <img src={heroVector} alt="Login vector" />
                         </button>
                     </div>

@@ -5,8 +5,10 @@
 
 .sign {
     padding-top: 50px;
+    position: relative;
+    z-index: 2000;
     &__container {
-        padding-left:  120px;
+        padding-left: 120px;
     }
 
     &__heading {
@@ -31,6 +33,7 @@
         line-height: 22px;
         color: #FFFFFF;
     }
+
     &__link {
         display: flex;
         font-family: 'Outfit';
@@ -45,10 +48,18 @@
         border-radius: 100px;
 
     }
+
     &__form {
         padding: 0 0 0 10px;
     }
-    &__input,  .react-tel-input .form-control{
+
+    &__form-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__input,
+    .react-tel-input .form-control {
         font-family: 'Manrope';
         font-weight: 400;
         font-size: 16px;
@@ -63,15 +74,23 @@
         display: block;
         margin-bottom: 28px;
     }
+
     &__input::placeholder {
         color: rgba(255, 255, 255, 0.6)
     }
+
     &__button-wrapper {
         border-top: 1px solid;
         border-bottom: 1px solid;
-        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%)
-        1;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 23.42%, rgba(255, 255, 255, 0.19) 55.06%, rgba(255, 255, 255, 0.08) 78.17%, #FFFFFF 100%) 1;
+        transition: all 1s ease;
+
+        span {
+            transition: all 1s ease;
+            margin-right: 40px;
+        }
     }
+
     &__button {
         cursor: pointer;
         display: flex;
@@ -88,13 +107,18 @@
         background-color: transparent;
         border: none;
     }
-    &__button:hover {
-        animation: link ease 1s forwards;
+
+    &__button-wrapper:hover {
+        span {
+            margin-right: 80px;
+        }
     }
+
     @keyframes link {
         0% {
             width: 190px;
         }
+
         100% {
             width: 220px;
         }
@@ -105,23 +129,28 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 28px;
+
         div {
             margin-bottom: 0;
         }
     }
+
     .flag-dropdown {
         display: none;
     }
+
     .react-tel-input {
         width: auto;
         margin-right: 48px;
     }
+
     .react-tel-input .form-control {
         padding: 0px;
         border-bottom: none;
         height: auto;
         color: rgba(255, 255, 255, 0.6);
     }
+
     &__otp-input input {
         font-family: 'Manrope';
         font-style: normal;
@@ -136,7 +165,40 @@
         background-color: transparent;
         outline: none;
     }
+
     &__otp-among {
         margin-right: 16px;
+    }
+
+    &__up-password {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 60px;
+        }
+    }
+
+    &-up__avatar {
+        margin-left: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        width: 160px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 20px 30px 0;
+        color: #FFFFFF;
+        cursor: pointer;
+
+        input {
+            display: none;
+        }
     }
 }
