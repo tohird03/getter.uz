@@ -1,11 +1,13 @@
 .contact {
     padding: 95px 0 0;
+
     &__container {
         background-image: url("../../Assets/Images/contact.svg");
         background-repeat: no-repeat;
         background-position-y: top;
         background-position-x: 80%;
     }
+
     &__heading-span {
         font-family: 'Outfit';
         font-weight: 400;
@@ -14,6 +16,7 @@
         color: #969696;
         margin-right: 30px;
     }
+
     &__heading {
         // font-family: 'Outfit';
         font-weight: 300;
@@ -23,17 +26,23 @@
         // max-width: 755px;
         margin-bottom: 64px;
     }
+
     &__heading-italic {
         font-family: 'Outfit';
 
     }
+
     &__list {
         list-style: none;
-        margin-bottom: 64px;
+        margin-bottom: 38px;
+        display: flex;
+
         li {
             margin-bottom: 32px;
+            margin-right: 46px;
         }
     }
+
     &__address {
         font-family: 'Manrope';
         font-style: normal;
@@ -41,18 +50,36 @@
         font-size: 32px;
         line-height: 44px;
         color: #121212;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 30px;
+            color: #121212;
+            text-decoration: none;
+            max-width: 280px;
+            margin-top: 10px;
+        }
     }
+
     &__address-span {
-        color: rgba(18,18,18,0.5);
+        color: rgba(18, 18, 18, 0.5);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
     }
+
     &__network-desc {
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        color: rgba(18,18,18,0.5);
+        color: rgba(18, 18, 18, 0.5);
         margin-bottom: 8px;
     }
-    &__network-link > a {
+
+    &__network-link>a {
         margin-right: 12px;
     }
 }

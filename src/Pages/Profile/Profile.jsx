@@ -29,8 +29,6 @@ const Profile = () => {
                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.9987 1.3335V10.6668M1.33203 6.00016H10.6654" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                     Добавить статя
                                 </NavLink>
                                 <a className='profile-page__link ' href="#">

@@ -11,9 +11,6 @@ const Contact = () => {
                 <section className='contact'>
                     <div className="container contact__container">
                         <h2 className='contact__heading'>
-                            <span className='contact__heading-span'>
-                                Контакты
-                            </span>
                             Если у вас
                             <br />
                             возникли вопросы
@@ -27,21 +24,30 @@ const Contact = () => {
                                 <p className='contact__address'>
                                     <span className='contact__address-span'>
                                         Адрес:
-                                    </span> Buyuk Ipakyoli, ул Лутфи, 1-b дом, 49 кв
+                                    </span>
+                                    <a href="https://goo.gl/maps/RKNFZ4hK2pBC5jWx6">
+                                        Buyuk Ipakyoli, ул Лутфи, 1-b дом, 49 кв
+                                    </a>
                                 </p>
                             </li>
                             <li>
                                 <p className='contact__address'>
                                     <span className='contact__address-span'>
                                         Номер:
-                                    </span> +998 95 122-44-72
+                                    </span>
+                                    <a href="tel:+998951224472">
+                                        +998 95 122-44-72
+                                    </a>
                                 </p>
                             </li>
                             <li>
                                 <p className='contact__address'>
                                     <span className='contact__address-span'>
                                         E-mail:
-                                    </span> hello@getter.uz
+                                    </span>
+                                    <a href="mailto:hello@getter.uz">
+                                        hello@getter.uz
+                                    </a>
                                 </p>
                             </li>
                         </ul>
