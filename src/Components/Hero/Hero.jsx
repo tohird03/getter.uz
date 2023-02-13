@@ -13,8 +13,12 @@ import img3 from "../../Assets/Images/IMAGE (3).png"
 import img4 from "../../Assets/Images/IMAGE (4).png"
 import img5 from "../../Assets/Images/IMAGE (5).png"
 import img6 from "../../Assets/Images/IMAGE (6).png"
+import img7 from "../../Assets/Images/IMAGE (7).png"
+import img8 from "../../Assets/Images/IMAGE (8).png"
+import img9 from "../../Assets/Images/IMAGE (9).png"
+import img10 from "../../Assets/Images/IMAGE (10).png"
 const Hero = () => {
-    let arr = [
+    let users = [
         {
             name: "Abdulloh",
             img: img,
@@ -34,6 +38,41 @@ const Hero = () => {
             name: "Nasrullayev Jaloliddin",
             img: img3,
             job: "Backend developer"
+        },
+        {
+            name: "Ibrohimov Shahzod",
+            img: img4,
+            job: "Backend developer"
+        },
+        {
+            name: "Samadov Shaxboz",
+            img: img5,
+            job: "Designer, PM"
+        },
+        {
+            name: "Abbos Janizakov",
+            img: img6,
+            job: "Designer, CEO"
+        },
+        {
+            name: "Boltaev Mirsaid",
+            img: img7,
+            job: "Designer"
+        },
+        {
+            name: "Ibroximov Abdullajon",
+            img: img8,
+            job: "Frontend developer"
+        },
+        {
+            name: "Oripov Shaxriyor",
+            img: img9,
+            job: "Designer"
+        },
+        {
+            name: "Abduqaxxorov Abdug'ani",
+            img: img10,
+            job: "Full Stack developer"
         },
     ]
     return (
@@ -60,19 +99,18 @@ const Hero = () => {
 
                             <img
                                 className='hero__link-vector'
-                                style={{ marginLeft: `${170 + ((arr.length - 1) * 50)}px` }}
+                                style={{ marginLeft: `${170 + ((users.length - 1) * 50)}px` }}
                                 src={heroVector} alt="Hero vector" width="59" height="45" />
                         </div>
                     </NavLink>
                     <div className='hero__profile'>
                         {
-                            arr.map((e, i) => {
-                                return <HeroTooltip key={i} style={i} />
+                            users && users.map((e, i) => {
+                                return <HeroTooltip users={e} key={i} style={i} />
                             })
                         }
                     </div>
                 </div>
-
             </div>
         </div>
     );
